@@ -11,9 +11,10 @@ section[role="index"] > video {
   background: url("https://demosthenes.info/assets/images/polina.jpg") no-repeat;
   background-size: cover; }
 section[role="index"] > h1 {
-  width: 733px;
+  width: 1280px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  text-align: center; }
   section[role="index"] > h1 > span {
     font-size: 160px;
     background: -webkit-linear-gradient(#eee, #056868);
