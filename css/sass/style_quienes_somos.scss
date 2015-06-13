@@ -1,17 +1,26 @@
 section[role="quienesSomos"]{
-	margin-top:100%;
+	margin-top:50%;
 	font-family: 'Montserrat', sans-serif;
 	div {
-
-		width:30%;
+		width:90%;
+		margin-left:auto;
+		margin-right:auto;
+		div {
+			margin:4px;
+			text-align:center;
+			display:inline-block;
+			vertical-align:top;
+			width:calc((100% / 3) - 12px);
+			height:20em;
+		}
 	}
-	h2 {
 
-	}
 	p {
-		display:inline;
+		height:6em;
+		display:block;
 	}
+
 	i {
-		display:inline;
+		text-align:center;
 	}
 }
