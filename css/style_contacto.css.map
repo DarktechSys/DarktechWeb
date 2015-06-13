@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,wBAAwB;EACxB,WAAW,EAAE,wBAAwB;EAErC,kCAAS;IACR,MAAM,EAAE,SAAS;IACjB,YAAY,EAAC,IAAI;IACjB,KAAK,EAAE,GAAG;EAGX,iCAAQ;IACP,MAAM,EAAE,SAAS;IACjB,YAAY,EAAC,IAAI;IACjB,KAAK,EAAE,GAAG;EAGX,iCAAQ;IACP,MAAM,EAAE,SAAS;IACjB,YAAY,EAAC,IAAI;IACjB,KAAK,EAAE,GAAG",
+"sources": ["sass/style_contacto.scss"],
+"names": [],
+"file": "style_contacto.css"
+}

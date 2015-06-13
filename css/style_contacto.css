@@ -1,0 +1,16 @@
+section[role="contacto"] {
+  font-family: 'Montserrat', sans-serif; }
+  section[role="contacto"] #contacto {
+    border: 2px solid;
+    border-color: blue;
+    width: 40%; }
+  section[role="contacto"] #oficina {
+    border: 2px solid;
+    border-color: blue;
+    width: 40%; }
+  section[role="contacto"] #horario {
+    border: 2px solid;
+    border-color: blue;
+    width: 40%; }
+
+/*# sourceMappingURL=style_contacto.css.map */
