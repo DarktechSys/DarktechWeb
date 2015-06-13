@@ -23,13 +23,24 @@
 	<style>
 	body{margin: 0px; padding: 0px;}
 	h2{font-family: 'Orbitron', sans-serif;
-  
-  font-size: 50px;
-  font-weight: bold;}
+	text-align: center;
+	font-size: 50px;
+  	font-weight: bold;
+	color:#056868}
+
+  .greca{
+  	width: 5em;
+	  height: 10px;
+  	display: inline-block;
+  	border-top: 4px double;
+  	border-color: #2CA599;
+  }
 	</style>
 	<link rel="stylesheet" href="css/style_index.css">
 	<link rel="stylesheet" href="css/style_servicios.css">
+	<link rel="stylesheet" href="css/style_precios.css">
 	<link rel="stylesheet" href="css/style_quienes_somos.css">
+
 </head>
 <body>
 	<section role="index">
@@ -102,7 +113,11 @@
 		</div>
 	</section>
 	<section role="servicios">
-		<h2>Servicios</h2>
+		<h2>
+			<span class="greca"></span>
+			<span>Servicios</span>
+			<span class="greca"></span>
+		</h2>
 		<ul>
 			<li>
 				<h3>Aplicaciones web</h3>
@@ -167,9 +182,78 @@
 		</ul>
 	</section>
 	<section role="precios">
-		<div>
-			
+		<h2>
+			<span class="greca"></span>
+			<span>Paquetes</span>
+			<span class="greca"></span>
+		</h2>
+		<div id="contenedor">
+			<div class="tabla">
+				<h5>Paquete Básico I</h5>
+				<div class="dibujos">
+					<i class="fa fa-map-marker fa-3x"></i>
+					<i class="fa fa-qrcode fa-3x"></i>
+				</div>
+					<ul>
+						<li><i class="fa fa-check"></i>  Mapa de google.</li>
+						<li><i class="fa fa-check"></i>  Portafolio de trabajo con descripciones(precios, materiales).</li>
+						<li><i class="fa fa-check"></i>  Qr (muestra)</li>
+						<li><i class="fa fa-check"></i>  3 meses con mantenimiento al contenido de la pagina.</li>
+					</ul>
+				<span><b>Costo : $ 5,000 pesos MX</b></span>
+				<br>
+				<button> <b>Comprar</b></button>
+			</div><!--
+			--><div class="tabla">
+				<h5> Paquete Empresarial</h5>
+				<div class="dibujos">
+					<i class="fa fa-map-marker fa-3x"></i>
+					<i class="fa fa-facebook fa-3x"></i >
+					<i class="fa fa-envelope-o fa-3x"></i>
+					<i class="fa fa-mobile fa-3x"></i>
+					<i class="fa fa-tablet fa-3x"></i>
+					<i class="fa fa-desktop fa-3x"></i>
+					<i class="fa fa-qrcode fa-3x"></i>
+
+				</div>
+					<ul>
+						<li><i class="fa fa-check"></i>  Mapa de google.</li>
+						<li><i class="fa fa-check"></i>  Portafolio de trabajo con descripciones(precios, materiales).</li>
+						<li><i class="fa fa-check"></i>  Desde la página puedes mandar un correo para contactar</li>
+						<li><i class="fa fa-check"></i>  Responsiva (se acopla a celulares, tabletas, tv, compu)</li>
+						<li><i class="fa fa-check"></i>  Qr (muestra)</li>
+						<li><i class="fa fa-check"></i>  Fan page (Facebook)</li>
+						<li><i class="fa fa-check"></i>  Correo</li>
+						<li><i class="fa fa-check"></i>  6 meses con mantenimiento al contenido de la pagina.</li>
+					</ul>
+				<span> <b>Costo : $ 13,000 pesos MX</b></span>
+				<br>
+				<button> <b>Comprar</b></button>
+			</div><!--
+			--><div class="tabla">
+				<h5>Paquete Básico II </h5>
+				<div class="dibujos">
+					<i class="fa fa-map-marker fa-3x"></i>
+					<i class="fa fa-mobile fa-3x"></i>
+					<i class="fa fa-tablet fa-3x"></i>
+					<i class="fa fa-desktop fa-3x"></i>
+					<i class="fa fa-qrcode fa-3x"></i>
+				</div>
+
+					<ul>
+						<li><i class="fa fa-check"></i> Mapa de google.</li>
+						<li><i class="fa fa-check"></i> Portafolio de trabajo con descripciones(precios, materiales).</li>
+						<li><i class="fa fa-check"></i> Responsiva (se acopla a celulares, tabletas, tv, compu)</li>
+						<li><i class="fa fa-check"></i> Qr (muestra)</li>
+						<li><i class="fa fa-check"></i> 3 meses con mantenimiento al contenido de la pagina.</li>
+					</ul>
+
+				<span><b>Costo : $ 9,000 pesos MX</b></span>
+				<br>
+				<button> <b>Comprar</b></button>
+			</div>
 		</div>
+
 	</section>
 	<section role="contacto">
 		<form action=""></form>
@@ -182,7 +266,6 @@
 		<div></div>
 	</section>
 </body>
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <script src="js/jquery-ui.js" type="text/javascript" charset="utf-8" async defer></script>
