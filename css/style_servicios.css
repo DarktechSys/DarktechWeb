@@ -37,7 +37,8 @@
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0); } }
 section[role="servicios"] {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  background: white; }
   section[role="servicios"] ul {
     list-style: none;
     padding: 0px; }

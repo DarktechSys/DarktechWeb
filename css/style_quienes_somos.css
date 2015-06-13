@@ -1,0 +1,11 @@
+section[role="quienesSomos"] {
+  margin-top: 100%;
+  font-family: 'Montserrat', sans-serif; }
+  section[role="quienesSomos"] div {
+    width: 30%; }
+  section[role="quienesSomos"] p {
+    display: inline; }
+  section[role="quienesSomos"] i {
+    display: inline; }
+
+/*# sourceMappingURL=style_quienes_somos.css.map */

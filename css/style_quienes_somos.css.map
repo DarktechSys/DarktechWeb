@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,4BAA4B;EAC3B,UAAU,EAAC,IAAI;EACf,WAAW,EAAE,wBAAwB;EACrC,gCAAI;IAEH,KAAK,EAAC,GAAG;EAKV,8BAAE;IACD,OAAO,EAAC,MAAM;EAEf,8BAAE;IACD,OAAO,EAAC,MAAM",
+"sources": ["sass/style_quienes_somos.scss"],
+"names": [],
+"file": "style_quienes_somos.css"
+}
