@@ -19,6 +19,18 @@ section[role="precios"] {
     border-color: blue;
     height: 45em;
     width: calc((100% / 3) - 3.5px); }
+    section[role="precios"] .tabla span {
+      color: blue;
+      display: block;
+      text-align: center; }
+    section[role="precios"] .tabla button {
+      display: block;
+      width: 140px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      height: 35px;
+      cursor: pointer; }
   section[role="precios"] .tabla:hover {
     z-index: 2;
     top: -13px;

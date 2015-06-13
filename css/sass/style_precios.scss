@@ -30,7 +30,26 @@ h5{
 	width: calc((100% / 3) - 3.5px);
 
 
+span{
+
+	color:blue;
+	display: block;
+  	text-align: center;
+
 }
+
+button{
+	  display: block;
+  	width: 140px;
+  	text-align: center;
+  	margin-left: auto;
+  	margin-right: auto;
+  	height: 35px;
+  	cursor: pointer;
+	}
+
+}
+
 
 .tabla:hover{
 	z-index: 2;
