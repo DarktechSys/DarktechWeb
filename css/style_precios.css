@@ -1,0 +1,14 @@
+section[role="precios"] {
+  font-family: 'Montserrat', sans-serif; }
+  section[role="precios"] h2 {
+    color: blue; }
+  section[role="precios"] h5 {
+    color: red; }
+  section[role="precios"] div {
+    display: inline-block;
+    border: 2px solid;
+    border-color: blue; }
+  section[role="precios"] ul > li {
+    list-style: none; }
+
+/*# sourceMappingURL=style_precios.css.map */

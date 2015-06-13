@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,uBAAuB;EACvB,WAAW,EAAE,wBAAwB;EACrC,0BAAE;IACD,KAAK,EAAC,IAAI;EAGX,0BAAE;IACD,KAAK,EAAC,GAAG;EAGV,2BAAG;IACF,OAAO,EAAE,YAAY;IACrB,MAAM,EAAE,SAAS;IACjB,YAAY,EAAC,IAAI;EAOjB,+BAAG;IACD,UAAU,EAAE,IAAI",
+"sources": ["sass/style_precios.scss"],
+"names": [],
+"file": "style_precios.css"
+}

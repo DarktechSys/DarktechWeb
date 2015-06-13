@@ -1,0 +1,28 @@
+
+section[role="precios"]{
+font-family: 'Montserrat', sans-serif;
+h2{
+	color:blue;
+}
+
+h5{
+	color:red;
+}
+
+div{
+	display: inline-block;
+	border: 2px solid;
+	border-color:blue;
+
+}
+
+ul{
+
+
+	>li{
+		 list-style: none;
+	}
+}
+
+
+}
