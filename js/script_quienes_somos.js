@@ -11,6 +11,7 @@ function hazAnimacion(){
 	$("#quienes_somos_anim"+cual).toggle("slide",3000);
 	$("#quienes_somos_anim"+cual).toggle("slide",3000);
 	//setTimeout(function(){$("#quienes_somos_anim"+cual).toggle("slide",3000);},2000);
+	//alert(cual);
 		if(cual == 3){
 		cual = 1;
 		return;
