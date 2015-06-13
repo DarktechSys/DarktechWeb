@@ -10,5 +10,37 @@ section[role="index"] > video {
   transform: translateX(-50%) translateY(-50%);
   background: url("https://demosthenes.info/assets/images/polina.jpg") no-repeat;
   background-size: cover; }
+section[role="index"] > h1 {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  section[role="index"] > h1 > span {
+    font-size: 160px;
+    background: -webkit-linear-gradient(#eee, #056868);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+    section[role="index"] > h1 > span:nth-of-type(1) {
+      font-family: 'Lobster', cursive; }
+    section[role="index"] > h1 > span:nth-of-type(2) {
+      font-family: 'Orbitron', sans-serif; }
+    section[role="index"] > h1 > span:nth-of-type(3) {
+      font-family: 'Oswald', sans-serif; }
+    section[role="index"] > h1 > span:nth-of-type(4) {
+      font-family: 'Gloria Hallelujah', cursive; }
+    section[role="index"] > h1 > span:nth-of-type(5) {
+      font-family: 'Sigmar One', cursive; }
+    section[role="index"] > h1 > span:nth-of-type(6) {
+      font-family: 'Bangers', cursive; }
+    section[role="index"] > h1 > span:nth-of-type(7) {
+      font-family: 'Alfa Slab One', cursive; }
+    section[role="index"] > h1 > span:nth-of-type(8) {
+      font-family: 'Pacifico', cursive; }
+section[role="index"] > h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  color: #056868;
+  text-align: center;
+  margin-top: -5%; }
 
 /*# sourceMappingURL=style_index.css.map */

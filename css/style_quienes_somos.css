@@ -1,11 +1,21 @@
 section[role="quienesSomos"] {
-  margin-top: 100%;
+  margin-top: 50%;
   font-family: 'Montserrat', sans-serif; }
   section[role="quienesSomos"] div {
-    width: 30%; }
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    section[role="quienesSomos"] div div {
+      margin: 4px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      width: calc((100% / 3) - 12px);
+      height: 20em; }
   section[role="quienesSomos"] p {
-    display: inline; }
+    height: 6em;
+    display: block; }
   section[role="quienesSomos"] i {
-    display: inline; }
+    text-align: center; }
 
 /*# sourceMappingURL=style_quienes_somos.css.map */
