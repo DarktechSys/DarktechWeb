@@ -2,22 +2,36 @@
 section[role="contacto"]{
 font-family: 'Montserrat', sans-serif;
 
-#contacto{
-	border: 2px solid;
-	border-color:blue;
-	width: 40%;
+
+#contenedor{
+	margin-left: auto;
+  	margin-right: auto;
+  	width: 90%;
 }
 
-#oficina{
-	border: 2px solid;
-	border-color:blue;
-	width: 40%;
+
+
+
+
+.adentro{
+	display: inline-block;
+	vertical-align:top;
+	border: 1px solid;
+	border-color:black;
+	height: 30em;
+	width:  calc((100% / 2) - 2px);
+	background-color: #2CA599;
 }
 
-#horario{
-	border: 2px solid;
-	border-color:blue;
-	width: 40%;
+form{
+	margin-left: 5em;
+  	margin-top: 3em;
+}
+
+#texto{
+
+	margin-left: 5em;
+  	margin-top: 3em;
 }
 
 }
