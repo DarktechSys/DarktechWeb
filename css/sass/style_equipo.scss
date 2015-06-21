@@ -1,0 +1,81 @@
+section[role="equipo"]{
+	height: 33em;
+	padding-bottom: 2%;
+	>div{
+		color: white;
+		display: inline-block;
+		vertical-align: top;
+		width: calc(33.3% - 32px);
+      	height: 25em;
+		padding: 15px;
+		margin: 1px;
+		transition: all 0.5s ease;
+
+		// Animación
+		&:hover{
+			padding-top: 50px;
+  			padding-bottom: 0px;
+			>img{
+				&.foto{
+					width: 80%;
+				}
+
+				&.bubble{
+					opacity: 1;
+				}
+			}
+
+			.datos{
+				width: 20%;
+			}
+		}
+		
+		>img{
+
+			&.foto{
+				width:100%; //80
+				display: inline-block;
+				vertical-align: top;
+				transition: all 0.5s ease;
+			}
+
+			&.bubble{
+				position: relative;
+  				top: -355px;
+  				left: 267px;
+				width: 132px;
+				opacity: 0;
+				transition: all 0.5s ease;
+			}
+		}
+
+		.datos{
+			width:0px; //20
+			overflow: hidden;
+			height: 226px;
+			background: #2CA599;
+			display: inline-block;
+			vertical-align: top;
+			transition: all 0.5s ease;
+
+			>a{
+				text-decoration: none;
+  				display: block;
+  				text-align: center;
+  				color: white;
+  				margin-top: 20px;
+			}
+		}
+
+		>p{
+			font-family: 'Montserrat', sans-serif;
+			background: #2CA599;
+			display: block; 
+			text-align: center;
+			width: 90%;
+			margin: 0px;
+  			padding: 5%;
+  			margin-top: 15px;
+		}
+	}
+}
