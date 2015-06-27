@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipograf├¡a */
+/* Tipografía */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -135,7 +135,7 @@ h2 {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* P├íginas */
+/* Páginas */
 section[role="index"] > video {
   position: absolute;
   top: 50%;
