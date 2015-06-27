@@ -1,0 +1,40 @@
+/* Tipografía */
+@import 'http://fonts.googleapis.com/css?family=Montserrat'; // general
+@import 'http://fonts.googleapis.com/css?family=Lobster'; //D
+@import 'http://fonts.googleapis.com/css?family=Orbitron'; //A
+@import 'http://fonts.googleapis.com/css?family=Oswald'; //R
+@import 'http://fonts.googleapis.com/css?family=Gloria+Hallelujah'; //K
+@import 'http://fonts.googleapis.com/css?family=Sigmar+One'; //T
+@import 'http://fonts.googleapis.com/css?family=Bangers'; //E
+@import 'http://fonts.googleapis.com/css?family=Alfa+Slab+One'; //C
+@import 'http://fonts.googleapis.com/css?family=Pacifico'; //H
+
+/* Default */
+body{
+	margin: 0px; 
+	padding: 0px;
+}
+h2{
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	font-size: 50px;
+  	font-weight: bold;
+	color:#056868;
+}
+
+.greca{
+	width: 5em;
+	height: 10px;
+  	display: inline-block;
+  	border-top: 4px double;
+  	border-color: #2CA599;
+}
+
+/* Páginas */
+@import 'style_index.scss';
+@import 'style_quienes_somos.scss';
+@import 'style_equipo.scss';
+@import 'style_servicios.scss';
+@import 'style_precios.scss';
+@import 'style_contacto.scss';
+@import 'style_sociales.scss';
