@@ -3,13 +3,13 @@ section[role="equipo"]{
 	padding-bottom: 2%;
 	>div{
 		color: white;
-		display: inline-block;
-		vertical-align: top;
-		width: calc(33.3% - 32px);
-      	height: 25em;
-		padding: 15px;
-		margin: 1px;
-		transition: all 0.5s ease;
+	  	display: inline-block;
+	  	vertical-align: top;
+	  	width: calc(33.3% - 2px);
+	  	height: 25em;
+	  	padding: 0px;
+	  	margin: 1px;
+	  	transition: all 0.5s ease;
 
 		// Animación
 		&:hover{
