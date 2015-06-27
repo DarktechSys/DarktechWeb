@@ -10,6 +10,10 @@
 @import 'http://fonts.googleapis.com/css?family=Pacifico'; //H
 
 /* Default */
+html{
+	overflow-x: hidden;
+}
+
 body{
 	margin: 0px; 
 	padding: 0px;
