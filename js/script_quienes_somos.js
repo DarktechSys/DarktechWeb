@@ -10,6 +10,7 @@ var div1 = "\<div class='contenedor' id='quienes_somos_anim1'>\
 				<i class='fa fa-rocket fa-5x'></i>\
 				<i class='fa fa-thumbs-o-up fa-5x'></i>\
 				<i class='fa fa-code-fork fa-5x'></i>\
+				<i class='fa fa-puzzle-piece fa-5x'></i>\
 			</div>";
 
 var div2 = "\<div class='contenedor' id='quienes_somos_anim2'>\
@@ -23,6 +24,7 @@ var div2 = "\<div class='contenedor' id='quienes_somos_anim2'>\
 				<i class='fa fa-magic fa-5x'></i>\
 				<i class='fa fa-css3 fa-5x'></i>\
 				<i class='fa fa-html5 fa-5x'></i>\
+				<i class='fa fa-heart fa-5x'></i>\
 			</div>";
 
 var div3 = "\<div class='contenedor' id='quienes_somos_anim3'>\
@@ -38,6 +40,7 @@ var div3 = "\<div class='contenedor' id='quienes_somos_anim3'>\
 				<i class='fa fa-briefcase fa-5x'></i>\
 				<i class='fa fa-globe fa-5x'></i>\
 				<i class='fa fa-lightbulb-o fa-5x'></i>\
+				<i class='fa fa-user-plus fa-5x'></i>\
 			</div>";
 
 var divs = [div1,div2,div3];
@@ -54,20 +57,36 @@ function ejecutaCarrusel(){
 	n++;
 }
 
-
+function hazInvisible(cualno){
+	
+}
 var idCarrusel;
 $(document).ready(idCarrusel = window.setInterval(ejecutaCarrusel,2000));
 //$(document).ready($("#principal").append(div1));
 
-
-$("#principal").mouseover(function(){
-	clearInterval(idCarrusel);
+$("#principal").on("mouseenter mouseleave", function(e){
+	console.log(e.type);
+	if(e.type === "mouseenter"){
+		clearInterval(idCarrusel);
+		$("#principal").append(divs[n-1]).show();
+		
+	} else {
+		idCarrusel = window.setInterval(ejecutaCarrusel,2000);
+	}
+});
+/*
+$("#principal").mouseenter(function(){
 	$("#principal > div").remove();
 	if(n != 0){
 		$("#principal").append(divs[n-1]).show();	
 	}
+	clearInterval(idCarrusel);
+	console.log("g");
+	
 });
 
-$("#principal").mouseout(function(){
+$("#principal").mouseleave(function(){
+	console.log("gg");
 	idCarrusel = window.setInterval(ejecutaCarrusel,2000);
 });
+*/
