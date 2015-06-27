@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipografía */
+/* Tipograf├¡a */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -10,6 +10,9 @@
 @import "http://fonts.googleapis.com/css?family=Alfa+Slab+One";
 @import "http://fonts.googleapis.com/css?family=Pacifico";
 /* Default */
+html {
+  overflow-x: hidden; }
+
 body {
   margin: 0px;
   padding: 0px; }
@@ -135,7 +138,7 @@ h2 {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* Páginas */
+/* P├íginas */
 section[role="index"] > video {
   position: absolute;
   top: 50%;
