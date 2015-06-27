@@ -383,15 +383,17 @@ section[role="precios"] {
   section[role="precios"] #contenedor {
     margin-left: auto;
     margin-right: auto;
-    width: 90%; }
+    width: 100%; }
   section[role="precios"] .tabla {
     display: inline-block;
     vertical-align: top;
     border: 1px solid;
     border-color: black;
     height: 42em;
-    width: calc((100% / 3) - 3.5px);
-    background-color: #2CA599; }
+    width: calc((100% / 3) - 30px);
+    background-color: #2CA599;
+    margin-left: 1%;
+    margin-right: 1%; }
     section[role="precios"] .tabla > span {
       color: black;
       display: block;
@@ -438,25 +440,64 @@ section[role="precios"] {
     color: white; }
 
 section[role="contacto"] {
-  font-family: 'Montserrat', sans-serif; }
-  section[role="contacto"] #contenedor {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 2%; }
+  section[role="contacto"] .adentro {
     margin-left: auto;
     margin-right: auto;
-    width: 90%; }
-  section[role="contacto"] .adentro {
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid;
-    border-color: black;
+    box-shadow: 0px 0px 20px 3px  black;
     height: 30em;
-    width: calc((100% / 2) - 2px);
-    background-color: #2CA599; }
-  section[role="contacto"] form {
-    margin-left: 5em;
-    margin-top: 3em; }
-  section[role="contacto"] #texto {
-    margin-left: 5em;
-    margin-top: 3em; }
+    width: 70%;
+    background-color: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; }
+  section[role="contacto"] #nombre {
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 0;
+    margin-bottom: 5%;
+    padding-left: 20px;
+    background: transparent;
+    margin-top: 5%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  section[role="contacto"] #telefono {
+    width: 40%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 0;
+    background: transparent;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-right: 10%; }
+  section[role="contacto"] #correo {
+    width: 40%;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 0;
+    background: transparent;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-left: 10%; }
+  section[role="contacto"] #comentario {
+    height: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border-bottom: 1px solid #333;
+    resize: none;
+    background: transparent;
+    text-align: center; }
+  section[role="contacto"] .form-control {
+    border: none;
+    border-bottom: 1px solid #333; }
+  section[role="contacto"] button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 @-webkit-keyframes rotateIn {
   0% {
