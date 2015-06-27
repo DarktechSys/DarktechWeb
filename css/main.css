@@ -31,6 +31,21 @@ h2 {
   border-top: 4px double;
   border-color: #2CA599; }
 
+#mensaje {
+  width: 209px;
+  padding: 30px;
+  position: fixed;
+  left: 79%;
+  top: 87%;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px 10px 0px 0px;
+  background: #056868;
+  color: white;
+  border: 2px solid black;
+  z-index: 2; }
+
 /* Animaciones */
 @-webkit-keyframes tada {
   0% {
