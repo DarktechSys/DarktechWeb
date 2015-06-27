@@ -6,9 +6,8 @@
 @import "http://fonts.googleapis.com/css?family=Oswald";
 @import "http://fonts.googleapis.com/css?family=Gloria+Hallelujah";
 @import "http://fonts.googleapis.com/css?family=Sigmar+One";
-@import "http://fonts.googleapis.com/css?family=Bangers";
+@import "http://fonts.googleapis.com/css?family=Kavoon";
 @import "http://fonts.googleapis.com/css?family=Alfa+Slab+One";
-@import "http://fonts.googleapis.com/css?family=Pacifico";
 /* Default */
 html {
   overflow-x: hidden; }
@@ -33,17 +32,16 @@ h2 {
 
 #mensaje {
   width: 209px;
-  padding: 30px;
+  padding: 10px;
   position: fixed;
-  left: calc(99% - 273px);
-  top: 87%;
+  top: -5px;
   text-align: center;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 0px 0px 10px 10px;
   background: #056868;
   color: white;
-  border: 2px solid black;
+  border: 2px solid white;
   z-index: 2; }
 
 /* Animaciones */
@@ -194,11 +192,11 @@ section[role="index"] > h1 {
     section[role="index"] > h1 > span:nth-of-type(5) {
       font-family: 'Sigmar One', cursive; }
     section[role="index"] > h1 > span:nth-of-type(6) {
-      font-family: 'Bangers', cursive; }
+      font-family: 'Kavoon', cursive; }
     section[role="index"] > h1 > span:nth-of-type(7) {
       font-family: 'Alfa Slab One', cursive; }
     section[role="index"] > h1 > span:nth-of-type(8) {
-      font-family: 'Pacifico', cursive; }
+      font-family: 'Kavoon', cursive; }
 section[role="index"] > h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 40px;

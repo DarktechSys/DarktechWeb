@@ -5,9 +5,8 @@
 @import 'http://fonts.googleapis.com/css?family=Oswald'; //R
 @import 'http://fonts.googleapis.com/css?family=Gloria+Hallelujah'; //K
 @import 'http://fonts.googleapis.com/css?family=Sigmar+One'; //T
-@import 'http://fonts.googleapis.com/css?family=Bangers'; //E
+@import 'http://fonts.googleapis.com/css?family=Kavoon'; //E H
 @import 'http://fonts.googleapis.com/css?family=Alfa+Slab+One'; //C
-@import 'http://fonts.googleapis.com/css?family=Pacifico'; //H
 
 /* Default */
 html{
@@ -36,17 +35,16 @@ h2{
 
 #mensaje{
 	width: 209px;
-  	padding: 30px;
+  	padding: 10px;
   	position: fixed;
-  	left: calc(99% - 273px);
-  	top: 87%;
+  	top: -5px;
   	text-align: center;
   	text-decoration: none;
   	font-family: 'Montserrat', sans-serif;
-  	border-radius: 10px 10px 0px 0px;
+  	border-radius: 0px 0px 10px 10px;
   	background: #056868;
   	color: white;
-  	border: 2px solid black;
+  	border: 2px solid white;
   	z-index: 2;
 }
 
