@@ -112,6 +112,20 @@ section[role="index"] > h2 {
   color: #056868;
   text-align: center;
   margin-top: -5%; }
+section[role="index"] > p {
+  text-align: center;
+  width: 150px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  top: 82%;
+  position: absolute;
+  left: 43%; }
+section[role="index"] > img {
+  width: 100px;
+  position: absolute;
+  left: 45%;
+  top: 88%; }
 
 @-webkit-keyframes flip {
   0% {
@@ -213,9 +227,9 @@ section[role="equipo"] {
     color: white;
     display: inline-block;
     vertical-align: top;
-    width: calc(33.3% - 32px);
+    width: calc(33.3% - 2px);
     height: 25em;
-    padding: 15px;
+    padding: 0px;
     margin: 1px;
     transition: all 0.5s ease; }
     section[role="equipo"] > div:hover {

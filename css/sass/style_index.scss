@@ -120,4 +120,22 @@ section[role="index"]{
 		text-align:center;
 		margin-top: -5%;
 	}
+
+  >p{
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    top: 82%;
+    position: absolute;
+    left: 43%;
+  }
+
+  >img{
+    width: 100px;
+    position: absolute;
+    left: 45%;
+    top: 88%;
+  }
 }
