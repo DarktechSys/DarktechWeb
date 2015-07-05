@@ -88,6 +88,76 @@ section[role="quienesSomos"]{
     height: 18em;
     background:#2CA599;
   }
+  .icono_animado{
+     i {
+        &:nth-of-type(1){
+          
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: tada;
+        animation-name: tada;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+
+        }
+        &:nth-of-type(2){
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;        }
+       
+        &:nth-of-type(3){
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;        }
+       
+        &:nth-of-type(4){
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: bounce;
+        animation-name: bounce;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;        }
+       
+        &:nth-of-type(5){
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;        }
+       
+        &:nth-of-type(6){
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: tada;
+        animation-name: tada;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;        }
+      }
+
+  }
+  .seleccion{
+    border-top:solid;
+    border-bottom:solid;
+    }
 	.contenedor { 
     margin-bottom: 1em;
 		width:90%;
