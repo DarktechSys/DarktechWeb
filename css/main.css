@@ -610,7 +610,8 @@ section[role="contacto"] {
     background-color: #2CA599;
     border: none;
     border-radius: 4px;
-    color: white; }
+    color: white;
+    cursor: pointer; }
   section[role="contacto"] .post-it {
     background: #fefabc;
     padding: 15px;
