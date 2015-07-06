@@ -17,7 +17,7 @@ section[role="index"]{
 		width: 1280px;
   		margin-left: auto;
   		margin-right: auto;
-  		text-align:center;			
+  		text-align:center;
 		-webkit-animation-duration: 1s;
 		animation-duration: 1s;
 		-webkit-animation-fill-mode: both;
@@ -76,7 +76,7 @@ section[role="index"]{
     position: absolute;
     left: 43%;
   }
-
+ >a{
   >img{
     width: 100px;
     position: absolute;
@@ -97,5 +97,6 @@ section[role="index"]{
     animation-iteration-count: infinite;
     -webkit-animation-name: flash;
     animation-name: flash;
-  }
+   }
+ }
 }
