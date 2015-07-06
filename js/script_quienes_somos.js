@@ -53,14 +53,11 @@ function ejecutaCarrusel(){
 	}
 	
 	$("#principal").append(divs[n]);
-	$(".contenedor").hide();
+	//$(".contenedor").hide();
 	$("#principal > div").show().fadeOut(2000);
 	n++;
 }
 
-function hazInvisible(cualno){
-	
-}
 var idCarrusel;
 
 var anim1;
@@ -75,17 +72,17 @@ $("#principal").on("mouseenter mouseleave", function(e){
 
 	if(e.type === "mouseenter"){	
 		clearInterval(idCarrusel);
+		clearInterval(animacion2);
 		$(".contenedor").hide();
 		$("#principal").append(divs[n-1]).show();
 		$("#principal").addClass("seleccion");
-		//$("#principal").addClass("icono_animado");
 		anim1 = setInterval(animacion,30);
 		anim3 = setInterval(animacion3,200);
 		
 	}
 	if(e.type === "mouseleave"){
 		clearInterval(anim1);
-		$("#principal").removeClass("icono_animado");
+		clearInterval(anim3);
 		anim2 = setInterval(animacion2,30);
 		idCarrusel = window.setInterval(ejecutaCarrusel,2000);
 	}
@@ -104,68 +101,68 @@ function animacion3(){
 	}
 	if(icono === 1){
 		
-		$("i:nth-of-type(1)").css("-webkit-animation-duration","1s");
-		$("i:nth-of-type(1)").css("animation-duration","1s");
-		$("i:nth-of-type(1)").css("-webkit-animation-fill-mode","both");
-		$("i:nth-of-type(1)").css("animation-fill-mode","both");
-		$("i:nth-of-type(1)").css("-webkit-animation-name",efecto1);
-		$("i:nth-of-type(1)").css("animation-name",efecto1);
-		$("i:nth-of-type(1)").css("-webkit-transform-origin","center bottom");
-		$("i:nth-of-type(1)").css("transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(1)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(1)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(1)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(1)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(1)").css("-webkit-animation-name",efecto1);
+		$(".contenedor i:nth-of-type(1)").css("animation-name",efecto1);
+		$(".contenedor i:nth-of-type(1)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(1)").css("transform-origin","center bottom");
 
-		$("i:nth-of-type(6)").css("-webkit-animation-duration","1s");
-		$("i:nth-of-type(6)").css("animation-duration","1s");
-		$("i:nth-of-type(6)").css("-webkit-animation-fill-mode","both");
-		$("i:nth-of-type(6)").css("animation-fill-mode","both");
-		$("i:nth-of-type(6)").css("-webkit-animation-name",efecto1);
-		$("i:nth-of-type(6)").css("animation-name",efecto1);
-		$("i:nth-of-type(6)").css("-webkit-transform-origin","center bottom");
-		$("i:nth-of-type(6)").css("transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(6)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(6)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(6)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(6)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(6)").css("-webkit-animation-name",efecto1);
+		$(".contenedor i:nth-of-type(6)").css("animation-name",efecto1);
+		$(".contenedor i:nth-of-type(6)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(6)").css("transform-origin","center bottom");
 
 		icono = icono + 1;
 		return;
 	}
 
 	if(icono === 2){
-		$("i:nth-of-type(2)").css("-webkit-animation-duration","1s");
-		$("i:nth-of-type(2)").css("animation-duration","1s");
-		$("i:nth-of-type(2)").css("-webkit-animation-fill-mode","both");
-		$("i:nth-of-type(2)").css("animation-fill-mode","both");
-		$("i:nth-of-type(2)").css("-webkit-animation-name",efecto2);
-		$("i:nth-of-type(2)").css("animation-name",efecto2);
-		$("i:nth-of-type(2)").css("-webkit-transform-origin","center bottom");
-		$("i:nth-of-type(2)").css("transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(2)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(2)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(2)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(2)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(2)").css("-webkit-animation-name",efecto2);
+		$(".contenedor i:nth-of-type(2)").css("animation-name",efecto2);
+		$(".contenedor i:nth-of-type(2)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(2)").css("transform-origin","center bottom");
 
-		$("i:nth-of-type(5)").css("-webkit-animation-duration","1s");
-		$("i:nth-of-type(5)").css("animation-duration","1s");
-		$("i:nth-of-type(5)").css("-webkit-animation-fill-mode","both");
-		$("i:nth-of-type(5)").css("animation-fill-mode","both");
-		$("i:nth-of-type(5)").css("-webkit-animation-name",efecto2);
-		$("i:nth-of-type(5)").css("animation-name",efecto2);
-		$("i:nth-of-type(5)").css("-webkit-transform-origin","center bottom");
-		$("i:nth-of-type(5)").css("transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(5)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(5)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(5)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(5)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(5)").css("-webkit-animation-name",efecto2);
+		$(".contenedor i:nth-of-type(5)").css("animation-name",efecto2);
+		$(".contenedor i:nth-of-type(5)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(5)").css("transform-origin","center bottom");
 
 		icono = icono + 1;
 		return;
 	}
 	if(icono === 3){
-		$("i:nth-of-type(4)").css("-webkit-animation-duration","1s");
-		$("i:nth-of-type(4)").css("animation-duration","1s");
-		$("i:nth-of-type(4)").css("-webkit-animation-fill-mode","both");
-		$("i:nth-of-type(4)").css("animation-fill-mode","both");
-		$("i:nth-of-type(4)").css("-webkit-animation-name",efecto3);
-		$("i:nth-of-type(4)").css("animation-name",efecto3);
-		$("i:nth-of-type(4)").css("-webkit-transform-origin","center bottom");
-		$("i:nth-of-type(4)").css("transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(4)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(4)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(4)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(4)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(4)").css("-webkit-animation-name",efecto3);
+		$(".contenedor i:nth-of-type(4)").css("animation-name",efecto3);
+		$(".contenedor i:nth-of-type(4)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(4)").css("transform-origin","center bottom");
 
-		$("i:nth-of-type(3)").css("-webkit-animation-duration","1s");
-		$("i:nth-of-type(3)").css("animation-duration","1s");
-		$("i:nth-of-type(3)").css("-webkit-animation-fill-mode","both");
-		$("i:nth-of-type(3)").css("animation-fill-mode","both");
-		$("i:nth-of-type(3)").css("-webkit-animation-name",efecto3);
-		$("i:nth-of-type(3)").css("animation-name",efecto3);
-		$("i:nth-of-type(3)").css("-webkit-transform-origin","center bottom");
-		$("i:nth-of-type(3)").css("transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(3)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(3)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(3)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(3)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(3)").css("-webkit-animation-name",efecto3);
+		$(".contenedor i:nth-of-type(3)").css("animation-name",efecto3);
+		$(".contenedor i:nth-of-type(3)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(3)").css("transform-origin","center bottom");
 
 		icono = icono + 1;
 		return;
