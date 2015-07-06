@@ -324,7 +324,7 @@ section[role="index"] > p {
   top: 82%;
   position: absolute;
   left: 43%; }
-section[role="index"] > img {
+section[role="index"] > a > img {
   width: 100px;
   position: absolute;
   left: 45%;
@@ -601,7 +601,8 @@ section[role="contacto"] {
     text-align: center;
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    outline: 0px; }
   section[role="contacto"] #telefono {
     width: 40%;
     height: 40px;
@@ -610,7 +611,8 @@ section[role="contacto"] {
     background: transparent;
     margin-bottom: 5%;
     text-align: center;
-    margin-right: 10%; }
+    margin-right: 10%;
+    outline: 0px; }
   section[role="contacto"] #correo {
     width: 40%;
     height: 40px;
@@ -619,7 +621,8 @@ section[role="contacto"] {
     background: transparent;
     margin-bottom: 5%;
     text-align: center;
-    margin-left: 10%; }
+    margin-left: 10%;
+    outline: 0px; }
   section[role="contacto"] #comentario {
     height: 100px;
     width: 80%;
@@ -628,7 +631,8 @@ section[role="contacto"] {
     border-bottom: 1px solid #333;
     resize: none;
     background: transparent;
-    text-align: center; }
+    text-align: center;
+    outline: 0px; }
   section[role="contacto"] .form-control {
     border: none;
     border-bottom: 1px solid #333; }
@@ -643,7 +647,8 @@ section[role="contacto"] {
     background-color: #2CA599;
     border: none;
     border-radius: 4px;
-    color: white; }
+    color: white;
+    cursor: pointer; }
   section[role="contacto"] .post-it {
     background: #fefabc;
     padding: 15px;
