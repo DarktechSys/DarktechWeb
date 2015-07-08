@@ -6,6 +6,7 @@
 	<!--Iconos-->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script type='text/javascript' src='js/formulario.js'></script>
 </head>
 <body>
 	<a href="#contacto" id="mensaje">
@@ -245,13 +246,14 @@
 			<div id="contacto" class="adentro">
 
 
-				<form  action="#">
+
 
 
              				   	<div id="respuesta">
 
                 					</div>
 
+                    			<div>
                     				<input name="nombre" type="text" id="nombre" class="form-control" placeholder="Nombre Completo">
 
 
@@ -263,11 +265,11 @@
                     				<textarea name="mensaje" cols="40" rows="5"  class="form-control" id = "comentario" placeholder="Dudas, comentarios o servicios de Interés"></textarea>
 
 
-                      				<button type="submit" >ENVIAR</button>
+                      				<button  onclick="valida_datos()">ENVIAR</button>
+				</div>
 
 
 
-            				</form>
 
 
 

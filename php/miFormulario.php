@@ -1,4 +1,7 @@
 <?php
-echo "hola mundo"
+
+ echo $_POST['nombre'];
+
+
 
 ?>
