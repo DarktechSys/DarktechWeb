@@ -1,11 +1,17 @@
 section[role="equipo"]{
 	height: 33em;
 	padding-bottom: 2%;
+
 	@include responsive(481px, 767px){
 	  		width: 100%;
 			height:auto;
 	  		display: block;
 	  	}
+
+	@include responsive(768px, 979px){
+		height: auto;
+	}
+
 	>div{
 		color: white;
 	  	display: inline-block;
@@ -28,7 +34,7 @@ section[role="equipo"]{
   			padding-bottom: 0px !important;
 			img{
 				&.foto{
-					width: 80% !important;
+					width: 100% !important;
 				}
 
 				&.bubble{
@@ -37,9 +43,21 @@ section[role="equipo"]{
 			}
 
 			.datos{
-				width: 20% !important;
+				display: none !important;
 
 
+			}
+
+			p{
+				font-size: 40px;
+				>a{
+				font-size: 10px;
+				text-decoration: none !important;
+  				text-align: center !important;
+  				color: white !important;
+  				margin-top: 20px !important;
+  				display: inline-block!important;
+  			}
 			}
 
 
@@ -49,8 +67,29 @@ section[role="equipo"]{
 
 
 	  	@include responsive(768px, 979px){
-	  		width: 100%;
 	  		display: block;
+	  		width: 100%;
+	  		height: 39em;
+	  		transition: all 0s ease;
+
+	  		padding-top: 0px !important;
+	  		margin-top: 0px;
+  			padding-bottom: 0px !important;
+
+			>img{
+				&.foto{
+					width: 80% !important;
+				}
+
+				&.bubble{
+					opacity: 0 !important;
+				}
+			}
+
+			.datos{
+				width: 20% !important;
+			}
+
 	  	}
 
 		// Animación
@@ -119,6 +158,16 @@ section[role="equipo"]{
 			margin: 0px;
   			padding: 5%;
   			margin-top: 15px;
+
+  			>a{
+  				display: none;
+  			}
+
+  			@include responsive(768px, 979px){
+  				padding: 3% 5%;
+				font-size: 40px;
+				margin-top: 0px;
+  			}
 		}
 	}
 }
