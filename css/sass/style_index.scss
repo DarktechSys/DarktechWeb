@@ -119,8 +119,7 @@ section[role="index"]{
 
 
 	@include responsive(768px, 979px){
-		top: 40%;
-		left: 42%;
+		display: none;
 	}
 
 
@@ -133,7 +132,7 @@ section[role="index"]{
     top: 88%;
 
 	@include responsive(768px, 979px){
-		top: 45%;
+		display: none;
 	}
 
     // Animación

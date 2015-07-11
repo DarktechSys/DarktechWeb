@@ -39,6 +39,9 @@ h2 {
   @media only screen and (min-width: 481px) and (max-width: 767px) {
     .greca {
       width: 1em; } }
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .greca {
+      width: 2em; } }
 
 #mensaje {
   width: 209px;
@@ -59,6 +62,23 @@ h2 {
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     #mensaje {
       display: none; } }
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  footer {
+    margin-top: -13px; } }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  footer {
+    margin-top: -13px; } }
+footer > a {
+  text-decoration: none;
+  text-align: center; }
+  footer > a > p {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding: 20px 0;
+    text-transform: uppercase;
+    background-color: #056868; }
 
 /* Animaciones */
 @-webkit-keyframes tada {
@@ -366,8 +386,7 @@ section[role="index"] > p {
       display: none; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     section[role="index"] > p {
-      top: 40%;
-      left: 42%; } }
+      display: none; } }
 section[role="index"] > a > img {
   width: 100px;
   position: absolute;
@@ -387,7 +406,7 @@ section[role="index"] > a > img {
   animation-name: flash; }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     section[role="index"] > a > img {
-      top: 45%; } }
+      display: none; } }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   section[role="index"] > a {
     display: none; } }
@@ -400,7 +419,7 @@ section[role="quienesSomos"] {
       margin-top: 28%; } }
   @media only screen and (min-width: 768px) and (max-width: 979px) {
     section[role="quienesSomos"] {
-      margin-top: 28%; } }
+      margin-top: 23%; } }
   section[role="quienesSomos"] #principal {
     width: 100%;
     height: 18em;
@@ -502,13 +521,14 @@ section[role="equipo"] {
       section[role="equipo"] > div {
         display: block;
         width: 100%;
-        height: 39em;
+        height: auto;
         transition: all 0s ease;
+        margin-bottom: -12%;
         padding-top: 0px !important;
         margin-top: 0px;
         padding-bottom: 0px !important; }
         section[role="equipo"] > div > img.foto {
-          width: 80% !important; }
+          width: 100% !important; }
         section[role="equipo"] > div > img.bubble {
           opacity: 0 !important; }
         section[role="equipo"] > div .datos {
@@ -542,6 +562,9 @@ section[role="equipo"] {
       display: inline-block;
       vertical-align: top;
       transition: all 0.5s ease; }
+      @media only screen and (min-width: 768px) and (max-width: 979px) {
+        section[role="equipo"] > div .datos {
+          display: none; } }
       section[role="equipo"] > div .datos > a {
         text-decoration: none;
         display: block;
@@ -557,13 +580,21 @@ section[role="equipo"] {
       margin: 0px;
       padding: 5%;
       margin-top: 15px; }
-      section[role="equipo"] > div > p > a {
-        display: none; }
       @media only screen and (min-width: 768px) and (max-width: 979px) {
         section[role="equipo"] > div > p {
           padding: 3% 5%;
           font-size: 40px;
-          margin-top: 0px; } }
+          margin-top: 0px;
+          text-align: right; } }
+      section[role="equipo"] > div > p > a {
+        display: none; }
+        @media only screen and (min-width: 768px) and (max-width: 979px) {
+          section[role="equipo"] > div > p > a {
+            display: inline-block;
+            text-decoration: none;
+            color: white; }
+            section[role="equipo"] > div > p > a > i {
+              font-size: 1em !important; } }
 
 section[role="servicios"] {
   font-family: 'Montserrat', sans-serif;
@@ -608,6 +639,9 @@ section[role="servicios"] {
           width: 100%;
           height: 18em;
           display: block; } }
+      @media only screen and (min-width: 768px) and (max-width: 979px) {
+        section[role="servicios"] > ul > li {
+          width: calc(50% - 32px); } }
       section[role="servicios"] > ul > li:nth-of-type(2n) {
         background: #2CA599; }
       section[role="servicios"] > ul > li > h3 {
@@ -635,6 +669,10 @@ section[role="precios"] {
     padding: 2em;
     margin: 0px 0px 0px 0px;
     font-size: 20px; }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      section[role="precios"] h5 {
+        font-size: 30px;
+        padding: 1em; } }
   section[role="precios"] #contenedor {
     width: 100%;
     margin-left: auto;
@@ -656,6 +694,15 @@ section[role="precios"] {
         margin-left: 0px;
         margin-top: 6px;
         padding-bottom: 12px; } }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      section[role="precios"] .tabla {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: auto;
+        margin-bottom: 1%;
+        padding-bottom: 30px; } }
     section[role="precios"] .tabla > span {
       color: black;
       display: block;
@@ -704,6 +751,9 @@ section[role="precios"] {
     text-align: -webkit-center;
     margin-bottom: 2em;
     margin-top: 2em; }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      section[role="precios"] .dibujos {
+        text-align: center; } }
     section[role="precios"] .dibujos i {
       margin-left: 1px;
       margin-right: 1px;
@@ -726,6 +776,10 @@ section[role="contacto"] {
     background-color: white;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px; }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      section[role="contacto"] .adentro {
+        height: auto;
+        padding-bottom: 25px; } }
   section[role="contacto"] #nombre {
     width: 80%;
     height: 40px;
@@ -740,6 +794,9 @@ section[role="contacto"] {
     margin-left: auto;
     margin-right: auto;
     outline: 0px; }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      section[role="contacto"] #nombre {
+        padding-left: 0px; } }
   section[role="contacto"] #telefono {
     width: 40%;
     height: 40px;
@@ -756,6 +813,12 @@ section[role="contacto"] {
     outline: 0px; }
     @media only screen and (min-width: 481px) and (max-width: 767px) {
       section[role="contacto"] #telefono {
+        width: 80%; } }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      section[role="contacto"] #telefono {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         width: 80%; } }
   section[role="contacto"] #correo {
     width: 40%;
@@ -774,6 +837,12 @@ section[role="contacto"] {
     @media only screen and (min-width: 481px) and (max-width: 767px) {
       section[role="contacto"] #correo {
         width: 80%; } }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      section[role="contacto"] #correo {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; } }
   section[role="contacto"] #comentario {
     height: 100px;
     width: 80%;

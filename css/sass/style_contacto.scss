@@ -16,6 +16,10 @@ margin-bottom: 2%;
 	background-color: white;
 	-webkit-border-radius: 4px;
       -moz-border-radius: 4px;
+  @include responsive(768px, 979px){
+    height: auto;
+    padding-bottom: 25px;
+  }
 }
 
 
@@ -35,6 +39,9 @@ margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
     outline:0px;
+    @include responsive(768px, 979px){
+      padding-left: 0px;
+    }
 
 }
 
@@ -55,7 +62,15 @@ margin-bottom: 2%;
     @include responsive(481px, 767px){
         width:80%;
       }
+
+    @include responsive(768px, 979px){
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 80%;
+    }
 }
+
 #correo{
     width: 40%;
     height: 40px;
@@ -73,7 +88,12 @@ margin-bottom: 2%;
     @include responsive(481px, 767px){
         width:80%;
       }
-
+     @include responsive(768px, 979px){
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 #comentario {
