@@ -8,13 +8,16 @@
 @import 'http://fonts.googleapis.com/css?family=Kavoon'; //E H
 @import 'http://fonts.googleapis.com/css?family=Alfa+Slab+One'; //C
 
+/* Adaptativas página */
+@import 'responsive.scss';
+
 /* Default */
 html{
 	overflow-x: hidden;
 }
 
 body{
-	margin: 0px; 
+	margin: 0px;
 	padding: 0px;
 }
 h2{
@@ -46,10 +49,13 @@ h2{
   	color: white;
   	border: 2px solid white;
   	z-index: 2;
+    @include responsive(481px, 767px){
+     display:none;
+
+      }
 }
 
-/* Adaptativas página */
-@import 'responsive.scss';
+
 
 /* Animaciones */
 @import 'animaciones.scss';

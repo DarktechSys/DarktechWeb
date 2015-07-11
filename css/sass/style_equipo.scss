@@ -1,6 +1,11 @@
 section[role="equipo"]{
 	height: 33em;
 	padding-bottom: 2%;
+	@include responsive(481px, 767px){
+	  		width: 100%;
+			height:auto;
+	  		display: block;
+	  	}
 	>div{
 		color: white;
 	  	display: inline-block;
@@ -10,6 +15,38 @@ section[role="equipo"]{
 	  	padding: 0px;
 	  	margin: 1px;
 	  	transition: all 0.5s ease;
+
+		@include responsive(481px, 767px){
+	  		width: 100%;
+			height:auto;
+	  		display: block;
+	  		padding: 0px;
+	  		margin-top: -44px;
+	  		transition: all 0s ease;
+
+	  		padding-top: 50px !important;
+  			padding-bottom: 0px !important;
+			img{
+				&.foto{
+					width: 80% !important;
+				}
+
+				&.bubble{
+					display: none !important;
+				}
+			}
+
+			.datos{
+				width: 20% !important;
+
+
+			}
+
+
+		}
+
+
+
 
 	  	@include responsive(768px, 979px){
 	  		width: 100%;
@@ -32,9 +69,10 @@ section[role="equipo"]{
 
 			.datos{
 				width: 20%;
+
 			}
 		}
-		
+
 		>img{
 
 			&.foto{
@@ -75,7 +113,7 @@ section[role="equipo"]{
 		>p{
 			font-family: 'Montserrat', sans-serif;
 			background: #2CA599;
-			display: block; 
+			display: block;
 			text-align: center;
 			width: 90%;
 			margin: 0px;

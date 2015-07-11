@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipograf├¡a */
+/* Tipografía */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -8,6 +8,13 @@
 @import "http://fonts.googleapis.com/css?family=Sigmar+One";
 @import "http://fonts.googleapis.com/css?family=Kavoon";
 @import "http://fonts.googleapis.com/css?family=Alfa+Slab+One";
+/* Adaptativas página */
+/*
+ * @media (min-width: 768px) and (max-width: 979px) 
+ * @media (min-width: 481px) and (max-width: 767px)
+ * @media (max-width: 480px)
+ * @media (max-width: 320px) 
+ */
 /* Default */
 html {
   overflow-x: hidden; }
@@ -43,14 +50,10 @@ h2 {
   color: white;
   border: 2px solid white;
   z-index: 2; }
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    #mensaje {
+      display: none; } }
 
-/* Adaptativas p├ígina */
-/*
- * @media (min-width: 768px) and (max-width: 979px) 
- * @media (min-width: 481px) and (max-width: 767px)
- * @media (max-width: 480px)
- * @media (max-width: 320px) 
- */
 /* Animaciones */
 @-webkit-keyframes tada {
   0% {
@@ -270,7 +273,7 @@ h2 {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* P├íginas */
+/* Páginas */
 section[role="index"] > video {
   position: absolute;
   top: 50%;
@@ -294,12 +297,19 @@ section[role="index"] > h1 {
   animation-fill-mode: both;
   -webkit-animation-name: tada;
   animation-name: tada; }
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    section[role="index"] > h1 {
+      width: 80%; } }
   section[role="index"] > h1 > span {
     font-size: 160px;
     background: -webkit-linear-gradient(#eee, #056868);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #056868; }
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      section[role="index"] > h1 > span {
+        font-size: 70px;
+        margin-top: 5%; } }
     section[role="index"] > h1 > span:nth-of-type(1) {
       font-family: 'Lobster', cursive; }
     section[role="index"] > h1 > span:nth-of-type(2) {
@@ -322,6 +332,10 @@ section[role="index"] > h2 {
   color: #056868;
   text-align: center;
   margin-top: -5%; }
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    section[role="index"] > h2 {
+      font-size: 30px;
+      margin-top: 5%; } }
 section[role="index"] > p {
   text-align: center;
   width: 150px;
@@ -331,6 +345,9 @@ section[role="index"] > p {
   top: 82%;
   position: absolute;
   left: 43%; }
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    section[role="index"] > p {
+      display: none; } }
 section[role="index"] > a > img {
   width: 100px;
   position: absolute;
@@ -348,6 +365,9 @@ section[role="index"] > a > img {
   animation-iteration-count: infinite;
   -webkit-animation-name: flash;
   animation-name: flash; }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  section[role="index"] > a {
+    display: none; } }
 
 section[role="quienesSomos"] {
   margin-top: 33%;
@@ -407,6 +427,11 @@ section[role="quienesSomos"] {
 section[role="equipo"] {
   height: 33em;
   padding-bottom: 2%; }
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    section[role="equipo"] {
+      width: 100%;
+      height: auto;
+      display: block; } }
   section[role="equipo"] > div {
     color: white;
     display: inline-block;
@@ -416,6 +441,22 @@ section[role="equipo"] {
     padding: 0px;
     margin: 1px;
     transition: all 0.5s ease; }
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      section[role="equipo"] > div {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0px;
+        margin-top: -44px;
+        transition: all 0s ease;
+        padding-top: 50px !important;
+        padding-bottom: 0px !important; }
+        section[role="equipo"] > div img.foto {
+          width: 80% !important; }
+        section[role="equipo"] > div img.bubble {
+          display: none !important; }
+        section[role="equipo"] > div .datos {
+          width: 20% !important; } }
     @media only screen and (min-width: 768px) and (max-width: 979px) {
       section[role="equipo"] > div {
         width: 100%;
