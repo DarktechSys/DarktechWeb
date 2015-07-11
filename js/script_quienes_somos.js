@@ -53,40 +53,140 @@ function ejecutaCarrusel(){
 	}
 	
 	$("#principal").append(divs[n]);
-	$("#principal > div").show().fadeOut(2000);	
+	//$(".contenedor").hide();
+	$("#principal > div").show().fadeOut(2000);
 	n++;
 }
 
-function hazInvisible(cualno){
-	
-}
 var idCarrusel;
-$(document).ready(idCarrusel = window.setInterval(ejecutaCarrusel,2000));
-//$(document).ready($("#principal").append(div1));
 
+var anim1;
+var anim2;
+var anim3;
+var ancho = 0;
+var icono = 1;
+var efectos = ["bounce","tada","flash","rotateIn","lightSpeedIn","wobble"];
+
+$(document).ready(idCarrusel = setInterval(ejecutaCarrusel,2000));
 $("#principal").on("mouseenter mouseleave", function(e){
-	console.log(e.type);
-	if(e.type === "mouseenter"){
+
+	if(e.type === "mouseenter"){	
 		clearInterval(idCarrusel);
+		clearInterval(animacion2);
+		$(".contenedor").hide();
 		$("#principal").append(divs[n-1]).show();
+		$("#principal").addClass("seleccion");
+		anim1 = setInterval(animacion,30);
+		anim3 = setInterval(animacion3,200);
 		
-	} else {
+	}
+	if(e.type === "mouseleave"){
+		clearInterval(anim1);
+		clearInterval(anim3);
+		anim2 = setInterval(animacion2,30);
 		idCarrusel = window.setInterval(ejecutaCarrusel,2000);
 	}
 });
-/*
-$("#principal").mouseenter(function(){
-	$("#principal > div").remove();
-	if(n != 0){
-		$("#principal").append(divs[n-1]).show();	
-	}
-	clearInterval(idCarrusel);
-	console.log("g");
-	
-});
 
-$("#principal").mouseleave(function(){
-	console.log("gg");
-	idCarrusel = window.setInterval(ejecutaCarrusel,2000);
-});
-*/
+// Anima iconos
+function animacion3(){
+	var efecto1 = efectos[Math.floor((Math.random() * 5))];
+	var efecto2 = efectos[Math.floor((Math.random() * 5))];
+	var efecto3 = efectos[Math.floor((Math.random() * 5))];
+
+	if(icono === 4){
+		icono = 1;
+		clearInterval(anim3);
+		return;
+	}
+	if(icono === 1){
+		
+		$(".contenedor i:nth-of-type(1)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(1)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(1)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(1)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(1)").css("-webkit-animation-name",efecto1);
+		$(".contenedor i:nth-of-type(1)").css("animation-name",efecto1);
+		$(".contenedor i:nth-of-type(1)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(1)").css("transform-origin","center bottom");
+
+		$(".contenedor i:nth-of-type(6)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(6)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(6)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(6)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(6)").css("-webkit-animation-name",efecto1);
+		$(".contenedor i:nth-of-type(6)").css("animation-name",efecto1);
+		$(".contenedor i:nth-of-type(6)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(6)").css("transform-origin","center bottom");
+
+		icono = icono + 1;
+		return;
+	}
+
+	if(icono === 2){
+		$(".contenedor i:nth-of-type(2)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(2)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(2)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(2)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(2)").css("-webkit-animation-name",efecto2);
+		$(".contenedor i:nth-of-type(2)").css("animation-name",efecto2);
+		$(".contenedor i:nth-of-type(2)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(2)").css("transform-origin","center bottom");
+
+		$(".contenedor i:nth-of-type(5)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(5)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(5)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(5)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(5)").css("-webkit-animation-name",efecto2);
+		$(".contenedor i:nth-of-type(5)").css("animation-name",efecto2);
+		$(".contenedor i:nth-of-type(5)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(5)").css("transform-origin","center bottom");
+
+		icono = icono + 1;
+		return;
+	}
+	if(icono === 3){
+		$(".contenedor i:nth-of-type(4)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(4)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(4)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(4)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(4)").css("-webkit-animation-name",efecto3);
+		$(".contenedor i:nth-of-type(4)").css("animation-name",efecto3);
+		$(".contenedor i:nth-of-type(4)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(4)").css("transform-origin","center bottom");
+
+		$(".contenedor i:nth-of-type(3)").css("-webkit-animation-duration","1s");
+		$(".contenedor i:nth-of-type(3)").css("animation-duration","1s");
+		$(".contenedor i:nth-of-type(3)").css("-webkit-animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(3)").css("animation-fill-mode","both");
+		$(".contenedor i:nth-of-type(3)").css("-webkit-animation-name",efecto3);
+		$(".contenedor i:nth-of-type(3)").css("animation-name",efecto3);
+		$(".contenedor i:nth-of-type(3)").css("-webkit-transform-origin","center bottom");
+		$(".contenedor i:nth-of-type(3)").css("transform-origin","center bottom");
+
+		icono = icono + 1;
+		return;
+	}
+}
+
+// Quita bordes
+function animacion2(){
+	if(ancho === -1){
+		$("#principal").removeClass("seleccion");
+		clearInterval(anim2);
+		return;
+	} else {
+		$(".seleccion").css("border-width",ancho+"px");
+		ancho = ancho - 1;
+	}
+}
+
+//Pone bordes
+function animacion(){
+	if(ancho === 12){
+		clearInterval(anim1);
+		return;
+	}
+	$(".seleccion").css("border-width",ancho+"px");
+	ancho = ancho + 1;
+}
