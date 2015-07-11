@@ -22,36 +22,40 @@ section[role="servicios"]{
 			>h3{
 				margin-top: 13px;
 				-webkit-animation-duration: 1s;
-  			animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-  			animation-fill-mode: both;
-  			-webkit-animation-name: bounce;
-   			animation-name: bounce;
-        -webkit-transform-origin: center bottom;
-  			transform-origin: center bottom;
-				}
-
-      >ul{
-          display:block;
-        }
-      >i{
-          transform: scale(0.7,0.7);
-          margin-top: 0px;
-          margin-bottom: 5%;
-        }
+	  			animation-duration: 1s;
+	            -webkit-animation-fill-mode: both;
+	  			animation-fill-mode: both;
+	  			-webkit-animation-name: bounce;
+	   			animation-name: bounce;
+	            -webkit-transform-origin: center bottom;
+	  			transform-origin: center bottom;
+			}
+      		>ul{
+          		display:block;
+        	}
+      		>i{
+          		transform: scale(0.7,0.7);
+          		margin-top: 0px;
+          		margin-bottom: 5%;
+     			}
 			}
 		}
 
 		>li{
-      color: white;
+      		color: white;
 			display: inline-block;
 			vertical-align: top;
 			width: calc(33.3% - 32px);
-      height: 18em;
+      		height: 18em;
 			padding: 15px;
 			background: #056868;
 			margin: 1px;
 			cursor: pointer;
+	
+			@include responsive(768px, 979px){
+				width: calc(50% - 32px);
+			}
+
 
 			&:nth-of-type(2n){
 				background:#2CA599;
@@ -60,18 +64,18 @@ section[role="servicios"]{
 			>h3{
 				text-align:center;
 				font-size: 25px;
-        margin-top: 10%;
+        		margin-top: 10%;
 			}
 			>i{
 				text-align: center;	
-  			display: block;
-  			margin-top: 15%;
-        transform: scale(1,1);
-        transition: all .2s;
+  				display: block;
+  				margin-top: 15%;
+        		transform: scale(1,1);
+        		transition: all .2s;
 			}
 			>ul{
 				display:none;
-        font-size: 20px;
+        		font-size: 20px;
 				>li{
 					text-align: center;	
 					>i{

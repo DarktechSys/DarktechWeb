@@ -11,6 +11,11 @@ h5{
   	margin: 0px 0px 0px 0px;
   	font-size: 20px;
 
+  	@include responsive(768px, 979px){
+  		font-size: 30px;	
+  		padding: 1em;
+  	}
+
 }
 
 #contenedor{
@@ -28,9 +33,17 @@ h5{
 	height: 44em;
 	width: calc((100% / 3) - 22px);
 	background-color: #2CA599;
-           margin-left: 17px;
+    margin-left: 17px;
 
-
+    @include responsive(768px, 979px){
+    	display: block; 
+    	margin-left: auto; 
+    	margin-right: auto;
+    	width: 95%;
+    	height: auto; 
+    	margin-bottom: 1%;
+    	padding-bottom: 30px;
+    }
 
 	>span{
 
@@ -41,16 +54,16 @@ h5{
 
 		}
 
-button{
-	display: block;
-  	width: 140px;
-  	text-align: center;
-  	margin-left: auto;
-  	margin-right: auto;
-  	height: 37px;
-  	cursor: pointer;
-  	 border-radius: 15px;
-  	background-color: white;
+	button{
+		display: block;
+	  	width: 140px;
+	  	text-align: center;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	  	height: 37px;
+	  	cursor: pointer;
+	  	 border-radius: 15px;
+	  	background-color: white;
 	}
 
 }
@@ -80,6 +93,10 @@ button{
   	text-align: -webkit-center;
   	margin-bottom: 2em;
   	margin-top: 2em;
+
+  	@include responsive(768px, 979px){
+  		text-align: center;
+  	}
 
 
 	i{

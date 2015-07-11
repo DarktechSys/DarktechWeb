@@ -17,8 +17,9 @@ section[role="equipo"]{
 	  	@include responsive(768px, 979px){
 	  		display: block; 
 	  		width: 100%;
-	  		height: 39em;
+	  		height: auto;
 	  		transition: all 0s ease;
+	  		margin-bottom: -12%;
 
 	  		padding-top: 0px !important;
 	  		margin-top: 0px;
@@ -26,7 +27,7 @@ section[role="equipo"]{
 			
 			>img{
 				&.foto{
-					width: 80% !important;
+					width: 100% !important;
 				}
 
 				&.bubble{
@@ -87,6 +88,10 @@ section[role="equipo"]{
 			vertical-align: top;
 			transition: all 0.5s ease;
 
+			@include responsive(768px, 979px){
+				display: none;
+			}
+
 			>a{
 				text-decoration: none;
   				display: block;
@@ -106,14 +111,24 @@ section[role="equipo"]{
   			padding: 5%;
   			margin-top: 15px;
 
-  			>a{
-  				display: none;
-  			}
-
   			@include responsive(768px, 979px){
   				padding: 3% 5%;
 				font-size: 40px;
 				margin-top: 0px;
+				text-align: right;
+  			}
+
+  			>a{
+  				display: none;
+
+				@include responsive(768px, 979px){
+					display: inline-block; 
+					text-decoration: none; 
+					color: white;
+					>i{
+  						font-size: 1em !important;
+  					}
+				}	
   			}
 		}
 	}
