@@ -2,6 +2,10 @@
 section[role="quienesSomos"]{
 	margin-top:33%;
 	font-family: 'Montserrat', sans-serif;
+  @include responsive(768px, 979px){
+    margin-top: 28%;
+  }
+
   #principal{
     width: 100%;
     height: 18em;

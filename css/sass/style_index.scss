@@ -11,6 +11,11 @@ section[role="index"]{
     	transform: translateX(-50%) translateY(-50%);
  		background: url('https://demosthenes.info/assets/images/polina.jpg') no-repeat;
   		background-size: cover;
+
+  		@include responsive(768px, 979px){
+  			top: 21%;
+  			min-height: 65%;
+  		}
 	}
 
 	>h1{
@@ -25,12 +30,21 @@ section[role="index"]{
 		-webkit-animation-name: tada;
 		animation-name: tada;
 
+		@include responsive(768px, 979px){
+			width: auto;
+		}
+
 		>span{
 			font-size:160px;
 			background: -webkit-linear-gradient(#eee, #056868);
   			-webkit-background-clip: text;
   			-webkit-text-fill-color: transparent;
   			color: #056868;
+			
+			@include responsive(768px, 979px){
+				font-size: 130px;
+			}
+
 			&:nth-of-type(1){
 				font-family: 'Lobster', cursive;
 			}
@@ -75,6 +89,12 @@ section[role="index"]{
     top: 82%;
     position: absolute;
     left: 43%;
+	
+	@include responsive(768px, 979px){
+		top: 40%;
+		left: 42%;
+	}
+
   }
  >a{
   >img{
@@ -83,6 +103,10 @@ section[role="index"]{
     left: 45%;
     top: 88%;
 
+	@include responsive(768px, 979px){
+		top: 45%;
+	}
+   
     // Animación
     /*-webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
