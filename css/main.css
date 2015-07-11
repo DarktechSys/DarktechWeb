@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipografía */
+/* Tipograf├¡a */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -44,6 +44,13 @@ h2 {
   border: 2px solid white;
   z-index: 2; }
 
+/* Adaptativas p├ígina */
+/*
+ * @media (min-width: 768px) and (max-width: 979px) 
+ * @media (min-width: 481px) and (max-width: 767px)
+ * @media (max-width: 480px)
+ * @media (max-width: 320px) 
+ */
 /* Animaciones */
 @-webkit-keyframes tada {
   0% {
@@ -263,7 +270,7 @@ h2 {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* Páginas */
+/* P├íginas */
 section[role="index"] > video {
   position: absolute;
   top: 50%;
@@ -409,6 +416,10 @@ section[role="equipo"] {
     padding: 0px;
     margin: 1px;
     transition: all 0.5s ease; }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+      section[role="equipo"] > div {
+        width: 100%;
+        display: block; } }
     section[role="equipo"] > div:hover {
       padding-top: 50px;
       padding-bottom: 0px; }
