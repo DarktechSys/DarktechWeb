@@ -114,7 +114,7 @@ section[role="index"]{
 	  	@include desktop(1025px , 1920px){
 			font-size:50px;
 			margin-top: 5%;
-
+			}
 		@include movil{
 			font-size:30px;
 		}
@@ -144,8 +144,9 @@ section[role="index"]{
 			top:50%;
 			left:41%;
 		}
+}
 
-  }
+
  >a{
   >img{
     width: 100px;
@@ -167,10 +168,6 @@ section[role="index"]{
     -webkit-animation-name: flash;
     animation-name: flash;
 
-   }
-
-
-
 		@include movil{
 			position:relative;
 			top:45%;
@@ -185,5 +182,4 @@ section[role="index"]{
    }
 
  }
-
 }

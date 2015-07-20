@@ -355,56 +355,55 @@ section[role="index"] > h2 {
     section[role="index"] > h2 {
       font-size: 50px;
       margin-top: 5%; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1920px) and (max-width: 640px) {
-    section[role="index"] > h2 {
-      font-size: 30px; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1920px) and (min-width: 641px) and (max-width: 1024px) {
-    section[role="index"] > h2 {
-      font-size: 30px; } }
-
-  section[role="index"] > h2 > p {
-    text-align: center;
-    width: 150px;
-    font-size: 20px;
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    top: 82%;
-    position: absolute;
-    left: 43%; }
-    @media only screen and (max-width: 640px) {
-      section[role="index"] > h2 > p {
-        position: relative;
-        top: 40%;
-        left: 35%; } }
-    @media only screen and (min-width: 641px) and (max-width: 1024px) {
-      section[role="index"] > h2 > p {
-        top: 50%;
-        left: 41%; } }
-  section[role="index"] > h2 > a > img {
-    width: 100px;
-    position: absolute;
-    left: 45%;
-    top: 88%;
-    /*-webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: tada;
-    animation-name: tada;*/
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: flash;
-    animation-name: flash; }
   @media only screen and (max-width: 640px) {
-    section[role="index"] > h2 > a {
+    section[role="index"] > h2 {
+      font-size: 30px; } }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    section[role="index"] > h2 {
+      font-size: 30px; } }
+section[role="index"] > p {
+  text-align: center;
+  width: 150px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  top: 82%;
+  position: absolute;
+  left: 43%; }
+  @media only screen and (max-width: 640px) {
+    section[role="index"] > p {
+      position: relative;
+      top: 40%;
+      left: 35%; } }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    section[role="index"] > p {
+      top: 50%;
+      left: 41%; } }
+section[role="index"] > a > img {
+  width: 100px;
+  position: absolute;
+  left: 45%;
+  top: 88%;
+  /*-webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: tada;
+  animation-name: tada;*/
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: flash;
+  animation-name: flash; }
+  @media only screen and (max-width: 640px) {
+    section[role="index"] > a > img {
       position: relative;
       top: 45%;
       left: 40%;
       transform: scale(0.7, 0.7); } }
   @media only screen and (min-width: 641px) and (max-width: 1024px) {
-    section[role="index"] > h2 > a {
+    section[role="index"] > a > img {
       transform: scale(0.7, 0.7);
       top: 55%; } }
 
