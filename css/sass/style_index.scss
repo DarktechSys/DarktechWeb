@@ -12,9 +12,14 @@ section[role="index"]{
  		background: url('https://demosthenes.info/assets/images/polina.jpg') no-repeat;
   		background-size: cover;
 
+		@include movil{
 
 
+		}
+		@include tablet(641px, 1024px){
 
+
+		}
 
 	}
 
@@ -30,9 +35,21 @@ section[role="index"]{
 		-webkit-animation-name: tada;
 		animation-name: tada;
 
+
 		@include desktop(1025px , 1920px){
 			width:auto;
   		}
+
+
+		@include movil{
+			width: 80%;
+
+	  	}
+
+		@include tablet(641px, 1024px){
+			width: auto;
+		}
+
 
 
 		>span{
@@ -43,10 +60,19 @@ section[role="index"]{
   			color: #056868;
 
 
+
 			@include desktop(1025px , 1920px){
 				font-size:180px;
 				margin-top: 5%;
   			}
+
+
+  			@include movil{
+				font-size: 80px;
+			}
+			@include tablet(641px, 1024px){
+				font-size: 120px;
+			}
 
 
 			&:nth-of-type(1){
@@ -84,11 +110,19 @@ section[role="index"]{
 		margin-top: -5%;
 
 
+
 	  	@include desktop(1025px , 1920px){
 			font-size:50px;
 			margin-top: 5%;
 
-	  	}
+		@include movil{
+			font-size:30px;
+		}
+		@include tablet(641px, 1024px){
+			font-size:30px;
+		}
+
+
 	}
 
   >p{
@@ -101,7 +135,15 @@ section[role="index"]{
     position: absolute;
     left: 43%;
 
-
+		@include movil{
+			position:relative;
+			top:40%;
+			left:35%;
+		}
+		@include tablet(641px, 1024px){
+			top:50%;
+			left:41%;
+		}
 
   }
  >a{
@@ -110,11 +152,6 @@ section[role="index"]{
     position: absolute;
     left: 45%;
     top: 88%;
-
-
-
-
-
     // Animación
     /*-webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
@@ -129,6 +166,22 @@ section[role="index"]{
     animation-iteration-count: infinite;
     -webkit-animation-name: flash;
     animation-name: flash;
+
+   }
+
+
+
+		@include movil{
+			position:relative;
+			top:45%;
+			left:40%;
+			transform: scale(0.7,0.7);
+		}
+		@include tablet(641px, 1024px){
+			transform: scale(0.7,0.7);
+			top: 55%;
+		}
+
    }
 
  }
