@@ -12,12 +12,13 @@ section[role="index"]{
  		background: url('https://demosthenes.info/assets/images/polina.jpg') no-repeat;
   		background-size: cover;
 
+		@include movil{
 
-  		@include responsive(768px, 979px){
-  			top: 21%;
-  			min-height: 65%;
-  		}
+		}
+		@include tablet(641px, 1024px){
 
+		}
+  		
 	}
 
 	>h1{
@@ -31,13 +32,13 @@ section[role="index"]{
 		animation-fill-mode: both;
 		-webkit-animation-name: tada;
 		animation-name: tada;
-		@include responsive(481px, 767px){
-		width: 80%;
 
-
+		@include movil{
+			width: 80%;
+			
 	  	}
 
-		@include responsive(768px, 979px){
+		@include tablet(641px, 1024px){
 			width: auto;
 		}
 
@@ -49,17 +50,12 @@ section[role="index"]{
   			-webkit-text-fill-color: transparent;
   			color: #056868;
 
-  			@include responsive(481px, 767px){
-				font-size:70px;
-				margin-top: 5%;
-
-	  	            }
-
-
-			@include responsive(768px, 979px){
-				font-size: 130px;
+  			@include movil{
+				font-size: 80px;
 			}
-
+			@include tablet(641px, 1024px){
+				font-size: 120px;
+			}
 
 			&:nth-of-type(1){
 				font-family: 'Lobster', cursive;
@@ -94,12 +90,13 @@ section[role="index"]{
 		color:#056868;
 		text-align:center;
 		margin-top: -5%;
-
-		@include responsive(481px, 767px){
+		@include movil{
 			font-size:30px;
-			margin-top: 5%;
+		}
+		@include tablet(641px, 1024px){
+			font-size:30px;
+		}
 
-	  	}
 	}
 
   >p{
@@ -111,18 +108,15 @@ section[role="index"]{
     top: 82%;
     position: absolute;
     left: 43%;
-
-    @include responsive(481px, 767px){
-     display:none;
-
-      }
-
-
-	@include responsive(768px, 979px){
-		display: none;
-	}
-
-
+		@include movil{
+			position:relative;
+			top:40%;
+			left:35%;
+		}
+		@include tablet(641px, 1024px){
+			top:50%;
+			left:41%;
+		}
   }
  >a{
   >img{
@@ -130,10 +124,6 @@ section[role="index"]{
     position: absolute;
     left: 45%;
     top: 88%;
-
-	@include responsive(768px, 979px){
-		display: none;
-	}
 
     // Animación
     /*-webkit-animation-iteration-count: infinite;
@@ -149,11 +139,19 @@ section[role="index"]{
     animation-iteration-count: infinite;
     -webkit-animation-name: flash;
     animation-name: flash;
-   }
- 	@include responsive(481px, 767px){
-     display:none;
 
-      }
+		@include movil{
+			position:relative;
+			top:45%;
+			left:40%;
+			transform: scale(0.7,0.7);
+		}
+		@include tablet(641px, 1024px){
+			transform: scale(0.7,0.7);	
+			top: 55%;
+		}
+
+   }
  }
 
 }

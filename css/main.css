@@ -306,10 +306,6 @@ section[role="index"] > video {
   transform: translateX(-50%) translateY(-50%);
   background: url("https://demosthenes.info/assets/images/polina.jpg") no-repeat;
   background-size: cover; }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    section[role="index"] > video {
-      top: 21%;
-      min-height: 65%; } }
 section[role="index"] > h1 {
   width: 1280px;
   margin-left: auto;
@@ -321,10 +317,10 @@ section[role="index"] > h1 {
   animation-fill-mode: both;
   -webkit-animation-name: tada;
   animation-name: tada; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (max-width: 640px) {
     section[role="index"] > h1 {
       width: 80%; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
     section[role="index"] > h1 {
       width: auto; } }
   section[role="index"] > h1 > span {
@@ -333,13 +329,12 @@ section[role="index"] > h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #056868; }
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
+    @media only screen and (max-width: 640px) {
       section[role="index"] > h1 > span {
-        font-size: 70px;
-        margin-top: 5%; } }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
+        font-size: 80px; } }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="index"] > h1 > span {
-        font-size: 130px; } }
+        font-size: 120px; } }
     section[role="index"] > h1 > span:nth-of-type(1) {
       font-family: 'Lobster', cursive; }
     section[role="index"] > h1 > span:nth-of-type(2) {
@@ -362,10 +357,12 @@ section[role="index"] > h2 {
   color: #056868;
   text-align: center;
   margin-top: -5%; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (max-width: 640px) {
     section[role="index"] > h2 {
-      font-size: 30px;
-      margin-top: 5%; } }
+      font-size: 30px; } }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    section[role="index"] > h2 {
+      font-size: 30px; } }
 section[role="index"] > p {
   text-align: center;
   width: 150px;
@@ -375,12 +372,15 @@ section[role="index"] > p {
   top: 82%;
   position: absolute;
   left: 43%; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (max-width: 640px) {
     section[role="index"] > p {
-      display: none; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
+      position: relative;
+      top: 40%;
+      left: 35%; } }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
     section[role="index"] > p {
-      display: none; } }
+      top: 50%;
+      left: 41%; } }
 section[role="index"] > a > img {
   width: 100px;
   position: absolute;
@@ -398,12 +398,16 @@ section[role="index"] > a > img {
   animation-iteration-count: infinite;
   -webkit-animation-name: flash;
   animation-name: flash; }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
+  @media only screen and (max-width: 640px) {
     section[role="index"] > a > img {
-      display: none; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  section[role="index"] > a {
-    display: none; } }
+      position: relative;
+      top: 45%;
+      left: 40%;
+      transform: scale(0.7, 0.7); } }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    section[role="index"] > a > img {
+      transform: scale(0.7, 0.7);
+      top: 55%; } }
 
 section[role="quienesSomos"] {
   margin-top: 38%;
