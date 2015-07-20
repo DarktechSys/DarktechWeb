@@ -1,28 +1,31 @@
-/*
- * @media (min-width: 320px) and (max-width: 479px)
- *@media (min-width: 480px) and (max-width: 599px)
- *@media (min-width: 600px) and (max-width: 767px)
- *@media (min-width: 768px) and (max-width: 979px)
-*@media (min-width : 768px) and (max-width : 1024px)
- *@media (min-width: 800px) and (max-width: 1023px)
- * @media (max-width: 320px)
- * @media (max-width: 480px)
- *@media (max-width: 767px)
- * @media (max-width: 1024px)
- *@media (min-width: 1200px)
- *@media (min-width : 1224px)
-*@media  (min-width : 1824px)
+$max_movil: 640px;
+$min_tv: 1921px;
 
-*/
+@mixin movil{
+	@media only screen and (max-width: #{$max_movil}){
+		@content;
+	}
+}
 
-@mixin responsive($min, $max){
+@mixin tablet($min, $max){
 	@media only screen and (min-width: $min) and (max-width: $max){
 		@content;
 	}
 }
 
-@mixin responsive-to($min){
-	@media only screen and (min-width: $min){
+@mixin desktop($min, $max){
+	@media only screen and (min-width: $min) and (max-width: $max){
+		@content;
+	}
+}
+@mixin tv{
+	@media only screen and (min-width: #{$min_tv}){
+		@content;
+	}
+}
+
+@mixin responsive($min, $max){
+	@media only screen and (min-width: $min) and (max-width: $max){
 		@content;
 	}
 }
