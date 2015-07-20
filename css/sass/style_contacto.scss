@@ -153,8 +153,12 @@ box-shadow: 0px 4px 6px #333;
 
 float:right;
 
-@include responsive(481px, 767px){
-      display:none;
+@include desktop(1025px, 1920px){
+      padding:30px;
+
+box-shadow: 0px 6px 8px #333;
+-moz-box-shadow: 0px 6px 8px #333;
+-webkit-box-shadow: 0px 6px 8px #333;
       }
 
 }

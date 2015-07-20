@@ -34,17 +34,14 @@ h2{
   	display: inline-block;
   	border-top: 4px double;
   	border-color: #2CA599;
-    @include responsive(481px, 767px){
-     width: 1em;
-     }
 
-  @include responsive(768px, 979px){
-    width: 2em;
-  }
 
+  @include desktop(1025px , 1920px){
+    width: 6em;
+    }
 }
 
-#mensaje{
+  #mensaje{
   width: 209px;
   padding: 10px;
   position: fixed;
@@ -59,22 +56,12 @@ h2{
   z-index: 2;
 
 
-    @include responsive(481px, 767px){
-     display:none;
-     }
-     @include responsive(768px, 979px){
-      display: none;
-    }
+
 
   }
 
 footer{
-    @include responsive(481px, 767px){
-      margin-top: -13px;
-  }
-  @include responsive(768px, 979px){
-      margin-top: -13px;
-  }
+    margin-bottom: 0px;
 
   >a{
     text-decoration: none;
@@ -89,8 +76,12 @@ footer{
       padding: 20px 0;
       text-transform: uppercase;
       background-color: #056868;
+
+
+
     }
   }
+
 }
 
 

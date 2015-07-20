@@ -2,12 +2,10 @@
 section[role="quienesSomos"]{
 	margin-top:38%;
 	font-family: 'Montserrat', sans-serif;
-  @include responsive(481px, 767px){
-    margin-top: 28%;
-    //falta modificar tamaño de letras
-  }
-  @include responsive(768px, 979px){
-    margin-top: 23%;
+
+
+  @include desktop(1025px , 1920px){
+    margin-top: 15%;
   }
 
   #principal{
@@ -32,20 +30,26 @@ section[role="quienesSomos"]{
   .cuadro_texto{
     font-size: 22px;
       margin-top:2em;
+      margin-left:20px;
       text-align: center;
       display: inline-block;
-      width:33%;
+      width:38%;
       height: 100%;
       vertical-align: top;
+        @include desktop(1025px , 1920px){
+            font-size: 19px;
+               }
+
 
   }
 
   #iconos_izquierda{
     margin-top:1em;
     height: 100%;
-    width: 33%; 
+    width: 30%;
     display: inline-block;
     vertical-align: top;
+    float: left;
     i {
         &:nth-of-type(1){
           position:relative;
@@ -55,12 +59,12 @@ section[role="quienesSomos"]{
         &:nth-of-type(2){
           position:relative;
           left: 57%;
-          top: 12%;        
+          top: 12%;
         }
         &:nth-of-type(3){
           position:relative;
           left: 25%;
-          top: 52%;        
+          top: 52%;
         }
     }
 }
@@ -68,10 +72,11 @@ section[role="quienesSomos"]{
   #iconos_derecha{
     margin-top:1em;
     height: 100%;
-    width: 33%;
+    width: 30%;
     display:inline-block;
     vertical-align: top;
- 
+    float: right;
+
      i {
         &:nth-of-type(1){
           position:relative;
@@ -81,12 +86,12 @@ section[role="quienesSomos"]{
         &:nth-of-type(2){
           position:relative;
           left: 57%;
-          top: 12%;        
+          top: 12%;
         }
         &:nth-of-type(3){
           position:relative;
           left: 25%;
-          top: 52%;        
+          top: 52%;
         }
     }
 }

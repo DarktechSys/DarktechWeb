@@ -30,12 +30,9 @@ h2 {
   display: inline-block;
   border-top: 4px double;
   border-color: #2CA599; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     .greca {
-      width: 1em; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    .greca {
-      width: 2em; } }
+      width: 6em; } }
 
 #mensaje {
   width: 209px;
@@ -50,29 +47,19 @@ h2 {
   color: white;
   border: 2px solid white;
   z-index: 2; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
-    #mensaje {
-      display: none; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    #mensaje {
-      display: none; } }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  footer {
-    margin-top: -13px; } }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  footer {
-    margin-top: -13px; } }
-footer > a {
-  text-decoration: none;
-  text-align: center; }
-  footer > a > p {
-    color: white;
-    font-size: 13px;
-    margin-bottom: 0;
-    padding: 20px 0;
-    text-transform: uppercase;
-    background-color: #056868; }
+footer {
+  margin-bottom: 0px; }
+  footer > a {
+    text-decoration: none;
+    text-align: center; }
+    footer > a > p {
+      color: white;
+      font-size: 13px;
+      margin-bottom: 0;
+      padding: 20px 0;
+      text-transform: uppercase;
+      background-color: #056868; }
 
 /* Animaciones */
 @-webkit-keyframes tada {
@@ -306,10 +293,6 @@ section[role="index"] > video {
   transform: translateX(-50%) translateY(-50%);
   background: url("https://demosthenes.info/assets/images/polina.jpg") no-repeat;
   background-size: cover; }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    section[role="index"] > video {
-      top: 21%;
-      min-height: 65%; } }
 section[role="index"] > h1 {
   width: 1280px;
   margin-left: auto;
@@ -321,10 +304,7 @@ section[role="index"] > h1 {
   animation-fill-mode: both;
   -webkit-animation-name: tada;
   animation-name: tada; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
-    section[role="index"] > h1 {
-      width: 80%; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     section[role="index"] > h1 {
       width: auto; } }
   section[role="index"] > h1 > span {
@@ -333,13 +313,10 @@ section[role="index"] > h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #056868; }
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
+    @media only screen and (min-width: 1025px) and (max-width: 1920px) {
       section[role="index"] > h1 > span {
-        font-size: 70px;
+        font-size: 180px;
         margin-top: 5%; } }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
-      section[role="index"] > h1 > span {
-        font-size: 130px; } }
     section[role="index"] > h1 > span:nth-of-type(1) {
       font-family: 'Lobster', cursive; }
     section[role="index"] > h1 > span:nth-of-type(2) {
@@ -362,9 +339,9 @@ section[role="index"] > h2 {
   color: #056868;
   text-align: center;
   margin-top: -5%; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     section[role="index"] > h2 {
-      font-size: 30px;
+      font-size: 50px;
       margin-top: 5%; } }
 section[role="index"] > p {
   text-align: center;
@@ -375,12 +352,6 @@ section[role="index"] > p {
   top: 82%;
   position: absolute;
   left: 43%; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
-    section[role="index"] > p {
-      display: none; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    section[role="index"] > p {
-      display: none; } }
 section[role="index"] > a > img {
   width: 100px;
   position: absolute;
@@ -398,22 +369,13 @@ section[role="index"] > a > img {
   animation-iteration-count: infinite;
   -webkit-animation-name: flash;
   animation-name: flash; }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    section[role="index"] > a > img {
-      display: none; } }
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-  section[role="index"] > a {
-    display: none; } }
 
 section[role="quienesSomos"] {
   margin-top: 38%;
   font-family: 'Montserrat', sans-serif; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     section[role="quienesSomos"] {
-      margin-top: 28%; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    section[role="quienesSomos"] {
-      margin-top: 23%; } }
+      margin-top: 15%; } }
   section[role="quienesSomos"] #principal {
     width: 100%;
     height: 25em;
@@ -431,17 +393,22 @@ section[role="quienesSomos"] {
   section[role="quienesSomos"] .cuadro_texto {
     font-size: 22px;
     margin-top: 2em;
+    margin-left: 20px;
     text-align: center;
     display: inline-block;
-    width: 33%;
+    width: 38%;
     height: 100%;
     vertical-align: top; }
+    @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+      section[role="quienesSomos"] .cuadro_texto {
+        font-size: 19px; } }
   section[role="quienesSomos"] #iconos_izquierda {
     margin-top: 1em;
     height: 100%;
-    width: 33%;
+    width: 30%;
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    float: left; }
     section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
       position: relative;
       left: 27%;
@@ -457,9 +424,10 @@ section[role="quienesSomos"] {
   section[role="quienesSomos"] #iconos_derecha {
     margin-top: 1em;
     height: 100%;
-    width: 33%;
+    width: 30%;
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    float: right; }
     section[role="quienesSomos"] #iconos_derecha i:nth-of-type(1) {
       position: relative;
       left: 27%;
@@ -889,9 +857,12 @@ section[role="contacto"] {
     -moz-box-shadow: 0px 4px 6px #333;
     -webkit-box-shadow: 0px 4px 6px #333;
     float: right; }
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
+    @media only screen and (min-width: 1025px) and (max-width: 1920px) {
       section[role="contacto"] .post-it {
-        display: none; } }
+        padding: 30px;
+        box-shadow: 0px 6px 8px #333;
+        -moz-box-shadow: 0px 6px 8px #333;
+        -webkit-box-shadow: 0px 6px 8px #333; } }
   section[role="contacto"] p {
     text-align: center; }
   section[role="contacto"] #titulo {
