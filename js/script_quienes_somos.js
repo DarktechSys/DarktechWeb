@@ -38,7 +38,7 @@ var div2 = "\<div class='contenedor' id='quienes_somos_anim2'>\
 var div3 = "\<div class='contenedor' id='quienes_somos_anim3'>\
 				<div id='iconos_izquierda'>\
 					<i class='fa fa-cubes fa-5x'></i>\
-					<i class='fa fa-line-chart fa-5x'></i>\
+					<i class='fa fa-globe fa-5x'></i>\
 					<i class='fa fa-briefcase fa-5x'></i>\
 				</div>\
 				<div class='cuadro_texto'>\
@@ -49,7 +49,7 @@ var div3 = "\<div class='contenedor' id='quienes_somos_anim3'>\
 					o simplemente dando a conocer tus ideas con una página web.</p>\
 				</div>\
 				<div id='iconos_derecha'>\
-					<i class='fa fa-globe fa-5x'></i>\
+					<i class='fa fa-line-chart fa-5x'></i>\
 					<i class='fa fa-lightbulb-o fa-5x'></i>\
 					<i class='fa fa-user-plus fa-5x'></i>\
 				</div>\
@@ -63,7 +63,7 @@ function ejecutaCarrusel(){
 	if (n == 3) {
 		n = 0;
 	}
-	
+
 	$("#principal").append(divs[n]);
 	//$(".contenedor").hide();
 	$("#principal > div").show().fadeOut(2000);
@@ -82,7 +82,7 @@ var efectos = ["bounce","tada","flash","rotateIn","lightSpeedIn","wobble"];
 $(document).ready(idCarrusel = setInterval(ejecutaCarrusel,2000));
 $("#principal").on("mouseenter mouseleave", function(e){
 
-	if(e.type === "mouseenter"){	
+	if(e.type === "mouseenter"){
 		clearInterval(idCarrusel);
 		clearInterval(animacion2);
 		$(".contenedor").hide();
@@ -90,7 +90,7 @@ $("#principal").on("mouseenter mouseleave", function(e){
 		$("#principal").addClass("seleccion");
 		anim1 = setInterval(animacion,30);
 		anim3 = setInterval(animacion3,200);
-		
+
 	}
 	if(e.type === "mouseleave"){
 		/*clearInterval(anim1);
@@ -112,7 +112,7 @@ function animacion3(){
 		return;
 	}
 	if(icono === 1){
-		
+
 		$(".contenedor i:nth-of-type(1)").css("-webkit-animation-duration","1s");
 		$(".contenedor i:nth-of-type(1)").css("animation-duration","1s");
 		$(".contenedor i:nth-of-type(1)").css("-webkit-animation-fill-mode","both");

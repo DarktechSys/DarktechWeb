@@ -30,6 +30,9 @@ h2 {
   display: inline-block;
   border-top: 4px double;
   border-color: #2CA599; }
+  @media only screen and (max-width: 640px) {
+    .greca {
+      width: 2em; } }
   @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     .greca {
       width: 6em; } }
@@ -69,6 +72,9 @@ footer {
       padding: 20px 0;
       text-transform: uppercase;
       background-color: #056868; }
+      @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+        footer > a > p {
+          padding: 25px 0px 50px 0px; } }
 
 /* Animaciones */
 @-webkit-keyframes tada {
@@ -361,7 +367,8 @@ section[role="index"] {
         font-size: 30px; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="index"] > h2 {
-        font-size: 30px; } }
+        font-size: 30px;
+        padding-bottom: 10%; } }
   section[role="index"] > p {
     text-align: center;
     width: 150px;
@@ -373,9 +380,7 @@ section[role="index"] {
     margin-right: auto; }
     @media only screen and (max-width: 640px) {
       section[role="index"] > p {
-        position: relative;
-        top: 40%;
-        left: 35%; } }
+        display: none; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="index"] > p {
         display: none; } }
@@ -394,10 +399,7 @@ section[role="index"] {
     display: block; }
     @media only screen and (max-width: 640px) {
       section[role="index"] > a > img {
-        position: relative;
-        top: 45%;
-        left: 40%;
-        transform: scale(0.7, 0.7); } }
+        display: none; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="index"] > a > img {
         display: none; } }
@@ -406,10 +408,7 @@ section[role="quienesSomos"] {
   font-family: 'Montserrat', sans-serif; }
   @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     section[role="quienesSomos"] {
-      margin-top: 15%; } }
-  @media only screen and (min-width: 641px) and (max-width: 1024px) {
-    section[role="quienesSomos"] {
-      margin-top: 10%; } }
+      margin-top: 9em; } }
   section[role="quienesSomos"] #principal {
     width: 100%;
     height: 25em;
@@ -443,22 +442,20 @@ section[role="quienesSomos"] {
         text-align: center; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="quienesSomos"] .cuadro_texto {
-        width: 60%;
+        width: 70%;
         height: 89%;
         padding: 1%;
         font-size: 20px; } }
   section[role="quienesSomos"] #iconos_izquierda {
     margin-top: 1em;
     height: 100%;
-    width: 33%;
+    width: 30%;
     display: inline-block;
     vertical-align: top;
     float: left; }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="quienesSomos"] #iconos_izquierda {
-        float: none;
-        width: 15%;
-        height: 50%; } }
+        display: none; } }
     section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
       position: relative;
       left: 27%;
@@ -473,7 +470,9 @@ section[role="quienesSomos"] {
       top: 52%; }
     @media only screen and (max-width: 640px) {
       section[role="quienesSomos"] #iconos_izquierda {
-        width: 33%; }
+        width: 28%;
+        margin-top: 0px;
+        margin-left: 1em; }
         section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
           left: 10%;
           top: 12%; }
@@ -523,14 +522,6 @@ section[role="quienesSomos"] {
 section[role="equipo"] {
   height: 33em;
   padding-bottom: 2%; }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
-    section[role="equipo"] {
-      width: 100%;
-      height: auto;
-      display: block; } }
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-    section[role="equipo"] {
-      height: auto; } }
   section[role="equipo"] > div {
     color: white;
     display: inline-block;
@@ -539,48 +530,50 @@ section[role="equipo"] {
     height: 25em;
     padding: 0px;
     margin: 1px;
-    transition: all 0.5s ease; }
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
-      section[role="equipo"] > div {
-        width: 100%;
-        height: auto;
-        display: block;
-        padding: 0px;
-        margin-top: -44px;
-        transition: all 0s ease;
-        padding-top: 50px !important;
-        padding-bottom: 0px !important; }
-        section[role="equipo"] > div img.foto {
-          width: 100% !important; }
-        section[role="equipo"] > div img.bubble {
-          display: none !important; }
-        section[role="equipo"] > div .datos {
-          display: none !important; }
-        section[role="equipo"] > div p {
-          font-size: 40px; }
-          section[role="equipo"] > div p > a {
-            font-size: 10px;
-            text-decoration: none !important;
-            text-align: center !important;
-            color: white !important;
-            margin-top: 20px !important;
-            display: inline-block !important; } }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
-      section[role="equipo"] > div {
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: all 0s ease;
-        margin-bottom: -12%;
-        padding-top: 0px !important;
-        margin-top: 0px;
-        padding-bottom: 0px !important; }
-        section[role="equipo"] > div > img.foto {
-          width: 100% !important; }
-        section[role="equipo"] > div > img.bubble {
-          opacity: 0 !important; }
-        section[role="equipo"] > div .datos {
-          width: 20% !important; } }
+    transition: all 0.5s ease;
+    		/*
+    		@include responsive(481px, 767px){
+    	  		width: 100%;
+    			height:auto;
+    	  		display: block;
+    	  		padding: 0px;
+    	  		margin-top: -44px;
+    	  		transition: all 0s ease;
+    
+    	  		padding-top: 50px !important;
+      			padding-bottom: 0px !important;
+    			img{
+    				&.foto{
+    					width: 100% !important;
+    				}
+    
+    				&.bubble{
+    					display: none !important;
+    				}
+    			}
+    
+    			.datos{
+    				display: none !important;
+    
+    
+    			}
+    
+    			p{
+    				font-size: 40px;
+    				>a{
+    				font-size: 10px;
+    				text-decoration: none !important;
+      				text-align: center !important;
+      				color: white !important;
+      				margin-top: 20px !important;
+      				display: inline-block!important;
+      			}
+    			}
+    
+    
+    		}
+    
+    		*/ }
     section[role="equipo"] > div:hover {
       padding-top: 50px;
       padding-bottom: 0px; }
@@ -609,10 +602,12 @@ section[role="equipo"] {
       background: #2CA599;
       display: inline-block;
       vertical-align: top;
-      transition: all 0.5s ease; }
-      @media only screen and (min-width: 768px) and (max-width: 979px) {
-        section[role="equipo"] > div .datos {
-          display: none; } }
+      transition: all 0.5s ease;
+      /*
+      @include responsive(768px, 979px){
+      	display: none;
+      }
+      */ }
       section[role="equipo"] > div .datos > a {
         text-decoration: none;
         display: block;
@@ -627,22 +622,25 @@ section[role="equipo"] {
       width: 90%;
       margin: 0px;
       padding: 5%;
-      margin-top: 15px; }
-      @media only screen and (min-width: 768px) and (max-width: 979px) {
-        section[role="equipo"] > div > p {
-          padding: 3% 5%;
-          font-size: 40px;
-          margin-top: 0px;
-          text-align: right; } }
+      margin-top: 15px;
+      			/*
+        			@include responsive(768px, 979px){
+        				padding: 3% 5%;
+      				font-size: 40px;
+      				margin-top: 0px;
+      				text-align: right;
+        			}*/ }
       section[role="equipo"] > div > p > a {
-        display: none; }
-        @media only screen and (min-width: 768px) and (max-width: 979px) {
-          section[role="equipo"] > div > p > a {
-            display: inline-block;
-            text-decoration: none;
-            color: white; }
-            section[role="equipo"] > div > p > a > i {
-              font-size: 1em !important; } }
+        display: none;
+        				/*
+        				@include responsive(768px, 979px){
+        					display: inline-block;
+        					text-decoration: none;
+        					color: white;
+        					>i{
+          						font-size: 1em !important;
+          					}
+        				}*/ }
 
 section[role="servicios"] {
   font-family: 'Montserrat', sans-serif;
