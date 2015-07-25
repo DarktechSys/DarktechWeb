@@ -1,7 +1,11 @@
 section[role="equipo"]{
 	height: 33em;
 	padding-bottom: 2%;
-
+	@include movil{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
 	@include tablet(641px, 1024px){
 	  		width: 100%;
 			height:auto;
@@ -19,7 +23,13 @@ section[role="equipo"]{
 	  	padding: 0px;
 	  	margin: 1px;
 	  	transition: all 0.5s ease;
-
+		@include  movil{
+			width:80%;
+			margin-left: auto;
+			margin-right: auto;
+			height: auto;
+			display: block;
+		}
 		@include tablet(641px, 1024px){
 	  		width: 80%;
 	  		margin-left: auto; 
