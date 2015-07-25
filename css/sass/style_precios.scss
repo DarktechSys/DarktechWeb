@@ -35,26 +35,11 @@ h5{
 	background-color: #2CA599;
            margin-left: 17px;
 
-	@include responsive(481px, 767px){
-     		width:100%;
-     		height: auto;
-     		display:block;
-     		margin-left: 0px;
-     		margin-top:6px;
-     		padding-bottom:12px;
-
-     	}
-
-
-	    @include responsive(768px, 979px){
-	    	display: block;
-	    	margin-left: auto;
-	    	margin-right: auto;
-	    	width: 95%;
-	    	height: auto;
-	    	margin-bottom: 1%;
-	    	padding-bottom: 30px;
-	    }
+	@include tablet(641px, 1024px){
+		display: block;
+		width: 65%;
+		margin: 1% auto 1% auto;
+	}
 
 
 	>span{
@@ -93,19 +78,6 @@ h5{
 	-moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
 	-webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
 	box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
-	@include responsive(481px, 767px){
-           border: 2px solid;
-	border-color:#2CA599;
-	z-index: 2;
-	top: -13px;
-	border-width: 3px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 0px 0 0px 0px rgba(0, 0, 0, 0), -0px 0 0px 0px rgba(0, 0, 0, 0);
-	-webkit-box-shadow: 0px 0 0px 0px rgba(0, 0, 0, 0), 0px 0 0px 0px rgba(0, 0, 0, 0);
-	box-shadow: 0px 0 0px 0px rgba(0, 0, 0, 0), 0px 0 0px 0px rgba(0, 0, 0, 0);
-     	}
 }
 
 
@@ -118,11 +90,7 @@ h5{
   	text-align: -webkit-center;
   	margin-bottom: 2em;
   	margin-top: 2em;
-
-  	@include responsive(768px, 979px){
-  		text-align: center;
-  	}
-
+  	text-align: center;
 
 	i{
 		margin-left: 1px;

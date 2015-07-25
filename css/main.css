@@ -545,7 +545,9 @@ section[role="equipo"] {
     transition: all 0.5s ease; }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="equipo"] > div {
-        width: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
         height: auto;
         display: block;
         padding: 0px;
@@ -656,14 +658,10 @@ section[role="servicios"] {
       background: #056868;
       margin: 1px;
       cursor: pointer; }
-      @media only screen and (min-width: 481px) and (max-width: 767px) {
+      @media only screen and (min-width: 641px) and (max-width: 1024px) {
         section[role="servicios"] > ul > li {
-          width: 100%;
-          height: 18em;
-          display: block; } }
-      @media only screen and (min-width: 768px) and (max-width: 979px) {
-        section[role="servicios"] > ul > li {
-          width: calc(50% - 32px); } }
+          width: calc(50% - 32px);
+          height: 20em; } }
       section[role="servicios"] > ul > li:nth-of-type(2n) {
         background: #2CA599; }
       section[role="servicios"] > ul > li > h3 {
@@ -708,23 +706,11 @@ section[role="precios"] {
     width: calc((100% / 3) - 22px);
     background-color: #2CA599;
     margin-left: 17px; }
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
-      section[role="precios"] .tabla {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: 0px;
-        margin-top: 6px;
-        padding-bottom: 12px; } }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="precios"] .tabla {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
-        height: auto;
-        margin-bottom: 1%;
-        padding-bottom: 30px; } }
+        width: 65%;
+        margin: 1% auto 1% auto; } }
     section[role="precios"] .tabla > span {
       color: black;
       display: block;
@@ -752,19 +738,6 @@ section[role="precios"] {
     -moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, 0.15), -20px 0 10px -10px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, 0.15), -20px 0 10px -10px rgba(0, 0, 0, 0.15);
     box-shadow: 20px 0 10px -10px rgba(0, 0, 0, 0.15), -20px 0 10px -10px rgba(0, 0, 0, 0.15); }
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
-      section[role="precios"] .tabla:hover {
-        border: 2px solid;
-        border-color: #2CA599;
-        z-index: 2;
-        top: -13px;
-        border-width: 3px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        -moz-box-shadow: 0px 0 0px 0px transparent, 0px 0 0px 0px transparent;
-        -webkit-box-shadow: 0px 0 0px 0px transparent, 0px 0 0px 0px transparent;
-        box-shadow: 0px 0 0px 0px transparent, 0px 0 0px 0px transparent; } }
   section[role="precios"] .dibujos {
     height: 3em;
     margin-left: auto;
@@ -772,10 +745,8 @@ section[role="precios"] {
     width: 95%;
     text-align: -webkit-center;
     margin-bottom: 2em;
-    margin-top: 2em; }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
-      section[role="precios"] .dibujos {
-        text-align: center; } }
+    margin-top: 2em;
+    text-align: center; }
     section[role="precios"] .dibujos i {
       margin-left: 1px;
       margin-right: 1px;
@@ -798,10 +769,6 @@ section[role="contacto"] {
     background-color: white;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px; }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
-      section[role="contacto"] .adentro {
-        height: auto;
-        padding-bottom: 25px; } }
   section[role="contacto"] #nombre {
     width: 80%;
     height: 40px;
@@ -816,9 +783,6 @@ section[role="contacto"] {
     margin-left: auto;
     margin-right: auto;
     outline: 0px; }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
-      section[role="contacto"] #nombre {
-        padding-left: 0px; } }
   section[role="contacto"] #telefono {
     width: 40%;
     height: 40px;
@@ -832,15 +796,6 @@ section[role="contacto"] {
     margin-bottom: 5%;
     text-align: center;
     outline: 0px; }
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
-      section[role="contacto"] #telefono {
-        width: 80%; } }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
-      section[role="contacto"] #telefono {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: 80%; } }
   section[role="contacto"] #correo {
     width: 40%;
     height: 40px;
@@ -855,15 +810,6 @@ section[role="contacto"] {
     text-align: center;
     margin-left: 10%;
     outline: 0px; }
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
-      section[role="contacto"] #correo {
-        width: 80%; } }
-    @media only screen and (min-width: 768px) and (max-width: 979px) {
-      section[role="contacto"] #correo {
-        width: 80%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; } }
   section[role="contacto"] #comentario {
     height: 100px;
     width: 80%;
