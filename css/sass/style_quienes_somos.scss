@@ -39,6 +39,10 @@ section[role="quienesSomos"]{
         @include desktop(1025px , 1920px){
             font-size: 19px;
                }
+        @include movil{
+          width:66%;
+          margin-left: 0px;
+        }
 
 
   }
@@ -46,54 +50,44 @@ section[role="quienesSomos"]{
   #iconos_izquierda{
     margin-top:1em;
     height: 100%;
-    width: 30%;
+    width: 33%;
     display: inline-block;
     vertical-align: top;
-    float: left;
+    //float: left;
     i {
         &:nth-of-type(1){
           position:relative;
           left: 27%;
           top: 12%;
-          @include movil{
-            left: 27%;
-            top: 8%;
-          }
-          @include tablet(641px, 1024px){
-          
-          }
         }
         &:nth-of-type(2){
           position:relative;
           left: 57%;
           top: 12%;
-          @include movil{
-            left: 27%;
-            top: 14%;
-          }
-          @include tablet(641px, 1024px){
-          
-          }
         }
         &:nth-of-type(3){
           position:relative;
           left: 25%;
           top: 52%;
-          @include movil{
-            left: 27%;
-            top: 20%;
-          }
-          @include tablet(641px, 1024px){
-          
-          }
         }
-        @include movil{
-          transform: scale(0.5,0.5);
+    }
+    @include movil {
+      width: 33%;
+      i {
+        //transform: scale(0.5,0.5);
+        &:nth-of-type(1){
+          left:10%;
+          top:12%;
         }
-        @include tablet(641px, 1024px){
-          
+        &:nth-of-type(2){
+          left:10%;
+          top:18%; 
         }
-
+        &:nth-of-type(3){
+          left:10%;
+          top:24%;
+        }
+      }
     }
 }
 
@@ -104,51 +98,56 @@ section[role="quienesSomos"]{
     display:inline-block;
     vertical-align: top;
     float: right;
-
      i {
         &:nth-of-type(1){
           position:relative;
           left: 27%;
           top: 12%;
-          @include movil{
-            left: 27%;
-            top: -103%;
-          }
-          @include tablet(641px, 1024px){
-          
-          }
         }
         &:nth-of-type(2){
           position:relative;
           left: 57%;
           top: 12%;
-          @include movil{
-            left: 27%;
-            top: -97%;
-          }
-          @include tablet(641px, 1024px){
-          
-          }
         }
         &:nth-of-type(3){
           position:relative;
           left: 25%;
           top: 52%;
-          @include movil{
-            left: 27%;
-            top: -91%;
-          }
-          @include tablet(641px, 1024px){
-          
-          }
         }
+      }
+     @include movil {
+      display:none;
+      
+      //width: 33%;
+      //margin-right: 5px;
+      i {
 
-        @include movil{
-          transform: scale(0.5,0.5);
+        //transform: scale(0.5,0.5);
+        &:nth-of-type(1){
+          /*
+          position:relative;
+          left:10%;
+          top:12%;
+          */
+          //float:left;
         }
-        @include tablet(641px, 1024px){
-          
+        &:nth-of-type(2){
+          /*
+          position:relative;
+          left:10%;
+          top:20%; 
+          */
+          //float:left;
+        } 
+        &:nth-of-type(3){
+          /*
+          position:relative;
+          left:10%;
+          top:28%;
+          */
+          //float:left;
         }
+      }
     }
 }
   p {
