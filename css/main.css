@@ -30,6 +30,9 @@ h2 {
   display: inline-block;
   border-top: 4px double;
   border-color: #2CA599; }
+  @media only screen and (max-width: 640px) {
+    .greca {
+      width: 2em; } }
   @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     .greca {
       width: 6em; } }
@@ -50,6 +53,9 @@ h2 {
   color: white;
   border: 2px solid white;
   z-index: 2; }
+  @media only screen and (max-width: 640px) {
+    #mensaje {
+      display: none; } }
   @media only screen and (min-width: 641px) and (max-width: 1024px) {
     #mensaje {
       display: none; } }
@@ -374,9 +380,7 @@ section[role="index"] {
     margin-right: auto; }
     @media only screen and (max-width: 640px) {
       section[role="index"] > p {
-        position: relative;
-        top: 40%;
-        left: 35%; } }
+        display: none; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="index"] > p {
         display: none; } }
@@ -395,10 +399,7 @@ section[role="index"] {
     display: block; }
     @media only screen and (max-width: 640px) {
       section[role="index"] > a > img {
-        position: relative;
-        top: 45%;
-        left: 40%;
-        transform: scale(0.7, 0.7); } }
+        display: none; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="index"] > a > img {
         display: none; } }
@@ -438,6 +439,11 @@ section[role="quienesSomos"] {
       section[role="quienesSomos"] .cuadro_texto {
         font-size: 19px;
         margin-left: 4em; } }
+    @media only screen and (max-width: 640px) {
+      section[role="quienesSomos"] .cuadro_texto {
+        width: 66%;
+        margin-left: 0px;
+        text-align: center; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="quienesSomos"] .cuadro_texto {
         width: 70%;
@@ -461,10 +467,6 @@ section[role="quienesSomos"] {
       position: relative;
       left: 27%;
       top: 12%; }
-      @media only screen and (max-width: 640px) {
-        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
-          left: 27%;
-          top: 8%; } }
       @media only screen and (min-width: 1025px) and (max-width: 1920px) {
         section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
           left: 2%;
@@ -477,21 +479,28 @@ section[role="quienesSomos"] {
         section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(2) {
           left: 25%;
           top: 12%; } }
-      @media only screen and (max-width: 640px) {
-        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(2) {
-          left: 27%;
-          top: 14%; } }
     section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(3) {
       position: relative;
       left: 25%;
       top: 52%; }
-      @media only screen and (max-width: 640px) {
+      @media only screen and (min-width: 1025px) and (max-width: 1920px) {
         section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(3) {
-          left: 27%;
-          top: 20%; } }
+          left: 10px;
+          top: 52%; } }
     @media only screen and (max-width: 640px) {
-      section[role="quienesSomos"] #iconos_izquierda i {
-        transform: scale(0.5, 0.5); } }
+      section[role="quienesSomos"] #iconos_izquierda {
+        width: 28%;
+        margin-top: 0px;
+        margin-left: 1em; }
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
+          left: 10%;
+          top: 12%; }
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(2) {
+          left: 10%;
+          top: 18%; }
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(3) {
+          left: 10%;
+          top: 24%; } }
   section[role="quienesSomos"] #iconos_derecha {
     margin-top: 1em;
     height: 100%;
@@ -511,29 +520,17 @@ section[role="quienesSomos"] {
       position: relative;
       left: 27%;
       top: 12%; }
-      @media only screen and (max-width: 640px) {
-        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(1) {
-          left: 27%;
-          top: -103%; } }
     section[role="quienesSomos"] #iconos_derecha i:nth-of-type(2) {
       position: relative;
       left: 57%;
       top: 12%; }
-      @media only screen and (max-width: 640px) {
-        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(2) {
-          left: 27%;
-          top: -97%; } }
     section[role="quienesSomos"] #iconos_derecha i:nth-of-type(3) {
       position: relative;
       left: 25%;
       top: 52%; }
-      @media only screen and (max-width: 640px) {
-        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(3) {
-          left: 27%;
-          top: -91%; } }
     @media only screen and (max-width: 640px) {
-      section[role="quienesSomos"] #iconos_derecha i {
-        transform: scale(0.5, 0.5); } }
+      section[role="quienesSomos"] #iconos_derecha {
+        display: none; } }
   section[role="quienesSomos"] p {
     height: 6em;
     display: block; }

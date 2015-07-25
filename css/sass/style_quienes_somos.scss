@@ -44,6 +44,11 @@ section[role="quienesSomos"]{
             font-size: 19px;
             margin-left: 4em;
                }
+        @include movil{
+          width:66%;
+          margin-left: 0px;
+          text-align: center;
+        }
 
         @include tablet(641px, 1024px){
           width: 70%;
@@ -67,18 +72,12 @@ section[role="quienesSomos"]{
     @include tablet(641px, 1024px){
       display: none;
     }
+
     i {
         &:nth-of-type(1){
           position:relative;
           left: 27%;
           top: 12%;
-          @include movil{
-            left: 27%;
-            top: 8%;
-          }
-          @include tablet(641px, 1024px){
-
-          }
            @include desktop(1025px , 1920px){
           left: 2%;
           top: 12%;
@@ -93,34 +92,36 @@ section[role="quienesSomos"]{
           left: 25%;
           top: 12%;
           }
-          @include movil{
-            left: 27%;
-            top: 14%;
-          }
-          @include tablet(641px, 1024px){
-
-          }
         }
         &:nth-of-type(3){
           position:relative;
           left: 25%;
           top: 52%;
-
-          @include movil{
-            left: 27%;
-            top: 20%;
-          }
-          @include tablet(641px, 1024px){
-
+           @include desktop(1025px , 1920px){
+          left: 10px;
+          top: 52%;
           }
         }
-        @include movil{
-          transform: scale(0.5,0.5);
+      }
+    @include movil {
+      width: 28%;
+      margin-top:0px;
+      margin-left: 1em;
+      i {
+        //transform: scale(0.5,0.5);
+        &:nth-of-type(1){
+          left:10%;
+          top:12%;
         }
-        @include tablet(641px, 1024px){
-
+        &:nth-of-type(2){
+          left:10%;
+          top:18%;
         }
-
+        &:nth-of-type(3){
+          left:10%;
+          top:24%;
+        }
+      }
     }
 }
 
@@ -146,45 +147,20 @@ section[role="quienesSomos"]{
           position:relative;
           left: 27%;
           top: 12%;
-          @include movil{
-            left: 27%;
-            top: -103%;
-          }
-          @include tablet(641px, 1024px){
-
-          }
         }
         &:nth-of-type(2){
           position:relative;
           left: 57%;
           top: 12%;
-          @include movil{
-            left: 27%;
-            top: -97%;
-          }
-          @include tablet(641px, 1024px){
-
-          }
         }
         &:nth-of-type(3){
           position:relative;
           left: 25%;
           top: 52%;
-          @include movil{
-            left: 27%;
-            top: -91%;
-          }
-          @include tablet(641px, 1024px){
-
-          }
         }
-
-        @include movil{
-          transform: scale(0.5,0.5);
-        }
-        @include tablet(641px, 1024px){
-
-        }
+      }
+     @include movil {
+      display:none;
     }
 }
   p {
@@ -193,17 +169,10 @@ section[role="quienesSomos"]{
     @include movil{
       font-size: 12px;
     }
-    @include tablet(641px, 1024px){
-
-    }
   }
   h3 {
     @include movil{
       font-size: 15px;
-
-    }
-    @include tablet(641px, 1024px){
-
 
     }
   }

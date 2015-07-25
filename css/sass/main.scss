@@ -35,7 +35,9 @@ h2{
   border-top: 4px double;
   border-color: #2CA599;
 
-
+  @include movil {
+    width:2em;
+  }
   @include desktop(1025px , 1920px){
     width: 6em;
     }
@@ -58,6 +60,10 @@ h2{
   color: white;
   border: 2px solid white;
   z-index: 2;
+  
+  @include movil{
+    display:none;
+  }
 
   @include tablet(641px, 1024px){
     display: none;

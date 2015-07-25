@@ -115,9 +115,7 @@ section[role="index"]{
 	margin-left: auto;
 	margin-right: auto;
    	@include movil{
-			position:relative;
-			top:40%;
-			left:35%;
+   		display:none;
 		}
 		@include tablet(641px, 1024px){
 			display: none;
@@ -143,10 +141,7 @@ section[role="index"]{
 	display: block;
 
 		@include movil{
-			position:relative;
-			top:45%;
-			left:40%;
-			transform: scale(0.7,0.7);
+			display:none;
 		}
 		@include tablet(641px, 1024px){
 			display: none;
