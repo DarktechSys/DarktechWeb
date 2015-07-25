@@ -450,14 +450,29 @@ section[role="quienesSomos"] {
       position: relative;
       left: 27%;
       top: 12%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
+          left: 27%;
+          top: 8%; } }
     section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(2) {
       position: relative;
       left: 57%;
       top: 12%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(2) {
+          left: 27%;
+          top: 14%; } }
     section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(3) {
       position: relative;
       left: 25%;
       top: 52%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(3) {
+          left: 27%;
+          top: 20%; } }
+    @media only screen and (max-width: 640px) {
+      section[role="quienesSomos"] #iconos_izquierda i {
+        transform: scale(0.5, 0.5); } }
   section[role="quienesSomos"] #iconos_derecha {
     margin-top: 1em;
     height: 100%;
@@ -469,17 +484,38 @@ section[role="quienesSomos"] {
       position: relative;
       left: 27%;
       top: 12%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(1) {
+          left: 27%;
+          top: -103%; } }
     section[role="quienesSomos"] #iconos_derecha i:nth-of-type(2) {
       position: relative;
       left: 57%;
       top: 12%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(2) {
+          left: 27%;
+          top: -97%; } }
     section[role="quienesSomos"] #iconos_derecha i:nth-of-type(3) {
       position: relative;
       left: 25%;
       top: 52%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(3) {
+          left: 27%;
+          top: -91%; } }
+    @media only screen and (max-width: 640px) {
+      section[role="quienesSomos"] #iconos_derecha i {
+        transform: scale(0.5, 0.5); } }
   section[role="quienesSomos"] p {
     height: 6em;
     display: block; }
+    @media only screen and (max-width: 640px) {
+      section[role="quienesSomos"] p {
+        font-size: 12px; } }
+  @media only screen and (max-width: 640px) {
+    section[role="quienesSomos"] h3 {
+      font-size: 15px; } }
 
 section[role="equipo"] {
   height: 33em;
