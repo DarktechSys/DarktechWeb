@@ -9,7 +9,7 @@ section[role="index"]{
     	height: auto;
     	z-index: -100;
     	transform: translateX(-50%) translateY(-50%);
- 		background: url('https://demosthenes.info/assets/images/polina.jpg') no-repeat;
+ 		background: url('../img/fondo.jpg') no-repeat;
   		background-size: cover;
 
 		@include movil{
@@ -105,7 +105,7 @@ section[role="index"]{
 	>h2{
 		font-family: 'Orbitron', sans-serif;
 		font-size:40px;
-		color:#056868;
+		color:white;
 		text-align:center;
 		margin-top: -5%;
 

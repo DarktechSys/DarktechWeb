@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipografía */
+/* Tipograf├¡a */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -8,7 +8,7 @@
 @import "http://fonts.googleapis.com/css?family=Sigmar+One";
 @import "http://fonts.googleapis.com/css?family=Kavoon";
 @import "http://fonts.googleapis.com/css?family=Alfa+Slab+One";
-/* Adaptativas página */
+/* Adaptativas p├ígina */
 /* Default */
 html {
   overflow-x: hidden; }
@@ -280,7 +280,7 @@ footer {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* Páginas */
+/* P├íginas */
 section[role="index"] > video {
   position: absolute;
   top: 50%;
@@ -291,7 +291,7 @@ section[role="index"] > video {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  background: url("https://demosthenes.info/assets/images/polina.jpg") no-repeat;
+  background: url("../img/fondo.jpg") no-repeat;
   background-size: cover; }
 section[role="index"] > h1 {
   width: 1280px;
@@ -348,7 +348,7 @@ section[role="index"] > h1 {
 section[role="index"] > h2 {
   font-family: 'Orbitron', sans-serif;
   font-size: 40px;
-  color: #056868;
+  color: white;
   text-align: center;
   margin-top: -5%; }
   @media only screen and (min-width: 1025px) and (max-width: 1920px) {
