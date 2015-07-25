@@ -2,7 +2,13 @@ section[role="equipo"]{
 	height: 33em;
 	padding-bottom: 2%;
 
+	@include tablet(641px, 1024px){
+	  		width: 100%;
+			height:auto;
+	  		display: block;
+	  	}
 
+	
 
 	>div{
 		color: white;
@@ -13,9 +19,11 @@ section[role="equipo"]{
 	  	padding: 0px;
 	  	margin: 1px;
 	  	transition: all 0.5s ease;
-		/*
-		@include responsive(481px, 767px){
-	  		width: 100%;
+
+		@include tablet(641px, 1024px){
+	  		width: 80%;
+	  		margin-left: auto; 
+	  		margin-right: auto; 
 			height:auto;
 	  		display: block;
 	  		padding: 0px;
@@ -43,7 +51,7 @@ section[role="equipo"]{
 			p{
 				font-size: 40px;
 				>a{
-				font-size: 10px;
+				font-size: 20px !important;
 				text-decoration: none !important;
   				text-align: center !important;
   				color: white !important;
@@ -55,10 +63,10 @@ section[role="equipo"]{
 
 		}
 
-		*/
 
 
 
+	  	
 
 		// Animación
 		&:hover{
@@ -107,11 +115,10 @@ section[role="equipo"]{
 			display: inline-block;
 			vertical-align: top;
 			transition: all 0.5s ease;
-			/*
+
 			@include responsive(768px, 979px){
 				display: none;
 			}
-			*/
 
 			>a{
 				text-decoration: none;
@@ -131,25 +138,9 @@ section[role="equipo"]{
 			margin: 0px;
   			padding: 5%;
   			margin-top: 15px;
-			/*
-  			@include responsive(768px, 979px){
-  				padding: 3% 5%;
-				font-size: 40px;
-				margin-top: 0px;
-				text-align: right;
-  			}*/
 
   			>a{
   				display: none;
-				/*
-				@include responsive(768px, 979px){
-					display: inline-block;
-					text-decoration: none;
-					color: white;
-					>i{
-  						font-size: 1em !important;
-  					}
-				}*/
   			}
 		}
 	}
