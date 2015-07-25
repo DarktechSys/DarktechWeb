@@ -291,7 +291,8 @@ footer {
     opacity: 1; } }
 /* Páginas */
 section[role="index"] {
-  background: url("../img/fondo.jpg"); }
+  background: url("../img/fondo.jpg");
+  background-size: cover; }
   section[role="index"] > h1 {
     width: 1280px;
     margin-left: auto;
