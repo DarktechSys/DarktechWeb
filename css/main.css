@@ -291,7 +291,8 @@ footer {
     opacity: 1; } }
 /* Páginas */
 section[role="index"] {
-  background: url("../img/fondo.jpg"); }
+  background: url("../img/fondo.jpg");
+  background-size: cover; }
   section[role="index"] > h1 {
     width: 1280px;
     margin-left: auto;
@@ -438,7 +439,8 @@ section[role="quienesSomos"] {
     @media only screen and (max-width: 640px) {
       section[role="quienesSomos"] .cuadro_texto {
         width: 66%;
-        margin-left: 0px; } }
+        margin-left: 0px;
+        text-align: center; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="quienesSomos"] .cuadro_texto {
         width: 60%;
@@ -507,25 +509,7 @@ section[role="quienesSomos"] {
       top: 52%; }
     @media only screen and (max-width: 640px) {
       section[role="quienesSomos"] #iconos_derecha {
-        display: none; }
-        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(1) {
-          /*
-          position:relative;
-          left:10%;
-          top:12%;
-          */ }
-        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(2) {
-          /*
-          position:relative;
-          left:10%;
-          top:20%; 
-          */ }
-        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(3) {
-          /*
-          position:relative;
-          left:10%;
-          top:28%;
-          */ } }
+        display: none; } }
   section[role="quienesSomos"] p {
     height: 6em;
     display: block; }
