@@ -1,32 +1,10 @@
 section[role="index"]{
-	>video{
-	position: absolute;
-    	top: 50%;
-    	left: 50%;
-    	min-width: 100%;
-    	min-height: 100%;
-    	width: auto;
-    	height: auto;
-    	z-index: -100;
-    	transform: translateX(-50%) translateY(-50%);
- 		background: url('../img/fondo.jpg') no-repeat;
-  		background-size: cover;
-
-		@include movil{
-
-
-		}
-		@include tablet(641px, 1024px){
-
-
-		}
-
-	}
-
+	background: url('../img/fondo.jpg');
 	>h1{
 		width: 1280px;
   		margin-left: auto;
   		margin-right: auto;
+  		margin-top: 0px;
   		text-align:center;
 		-webkit-animation-duration: 1s;
 		animation-duration: 1s;
@@ -107,7 +85,7 @@ section[role="index"]{
 		font-size:40px;
 		color:white;
 		text-align:center;
-		margin-top: -5%;
+		margin-top: 4%;
 
 
 
@@ -129,33 +107,24 @@ section[role="index"]{
     font-size: 20px;
     font-family: 'Orbitron', sans-serif;
     color: white;
-    top: 82%;
-    position: absolute;
-    left: 43%;
-
-		@include movil{
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+   	@include movil{
 			position:relative;
 			top:40%;
 			left:35%;
 		}
 		@include tablet(641px, 1024px){
-			top:50%;
-			left:41%;
+			display: none;
 		}
 }
 
 
  >a{
   >img{
-    width: 100px;
-    position: absolute;
-    left: 45%;
-    top: 88%;
+    width: 75px;
     // Animación
-    /*-webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: tada;
-    animation-name: tada;*/
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;
@@ -165,6 +134,10 @@ section[role="index"]{
     -webkit-animation-name: flash;
     animation-name: flash;
 
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+
 		@include movil{
 			position:relative;
 			top:45%;
@@ -172,8 +145,7 @@ section[role="index"]{
 			transform: scale(0.7,0.7);
 		}
 		@include tablet(641px, 1024px){
-			transform: scale(0.7,0.7);
-			top: 55%;
+			display: none;
 		}
 
    }
