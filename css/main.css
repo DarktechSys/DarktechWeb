@@ -33,6 +33,9 @@ h2 {
   @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     .greca {
       width: 6em; } }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .greca {
+      width: 3em; } }
 
 #mensaje {
   width: 209px;
@@ -47,6 +50,9 @@ h2 {
   color: white;
   border: 2px solid white;
   z-index: 2; }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    #mensaje {
+      display: none; } }
 
 footer {
   margin-bottom: 0px; }
@@ -284,140 +290,125 @@ footer {
     transform: none;
     opacity: 1; } }
 /* Páginas */
-section[role="index"] > video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background: url("../img/fondo.jpg") no-repeat;
-  background-size: cover; }
-  @media only screen and (min-width: 641px) and (max-width: 1024px) {
-    section[role="index"] > video {
-      min-width: 100%;
-      min-height: 100%; } }
-section[role="index"] > h1 {
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: tada;
-  animation-name: tada; }
-  @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-    section[role="index"] > h1 {
-      width: auto; } }
-  @media only screen and (max-width: 640px) {
-    section[role="index"] > h1 {
-      width: 80%; } }
-  @media only screen and (min-width: 641px) and (max-width: 1024px) {
-    section[role="index"] > h1 {
-      width: auto; } }
-  section[role="index"] > h1 > span {
-    font-size: 160px;
-    background: -webkit-linear-gradient(#eee, #056868);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #056868; }
+section[role="index"] {
+  background: url("../img/fondo.jpg"); }
+  section[role="index"] > h1 {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: tada;
+    animation-name: tada; }
     @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-      section[role="index"] > h1 > span {
-        font-size: 180px;
+      section[role="index"] > h1 {
+        width: auto; } }
+    @media only screen and (max-width: 640px) {
+      section[role="index"] > h1 {
+        width: 80%; } }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      section[role="index"] > h1 {
+        width: auto; } }
+    section[role="index"] > h1 > span {
+      font-size: 160px;
+      background: -webkit-linear-gradient(#eee, #056868);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #056868; }
+      @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+        section[role="index"] > h1 > span {
+          font-size: 180px;
+          margin-top: 5%; } }
+      @media only screen and (max-width: 640px) {
+        section[role="index"] > h1 > span {
+          font-size: 80px; } }
+      @media only screen and (min-width: 641px) and (max-width: 1024px) {
+        section[role="index"] > h1 > span {
+          font-size: 120px; } }
+      section[role="index"] > h1 > span:nth-of-type(1) {
+        font-family: 'Lobster', cursive; }
+      section[role="index"] > h1 > span:nth-of-type(2) {
+        font-family: 'Orbitron', sans-serif; }
+      section[role="index"] > h1 > span:nth-of-type(3) {
+        font-family: 'Oswald', sans-serif; }
+      section[role="index"] > h1 > span:nth-of-type(4) {
+        font-family: 'Gloria Hallelujah', cursive; }
+      section[role="index"] > h1 > span:nth-of-type(5) {
+        font-family: 'Sigmar One', cursive; }
+      section[role="index"] > h1 > span:nth-of-type(6) {
+        font-family: 'Kavoon', cursive; }
+      section[role="index"] > h1 > span:nth-of-type(7) {
+        font-family: 'Alfa Slab One', cursive; }
+      section[role="index"] > h1 > span:nth-of-type(8) {
+        font-family: 'Kavoon', cursive; }
+  section[role="index"] > h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 4%; }
+    @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+      section[role="index"] > h2 {
+        font-size: 50px;
         margin-top: 5%; } }
     @media only screen and (max-width: 640px) {
-      section[role="index"] > h1 > span {
-        font-size: 80px; } }
+      section[role="index"] > h2 {
+        font-size: 30px; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
-      section[role="index"] > h1 > span {
-        font-size: 120px; } }
-    section[role="index"] > h1 > span:nth-of-type(1) {
-      font-family: 'Lobster', cursive; }
-    section[role="index"] > h1 > span:nth-of-type(2) {
-      font-family: 'Orbitron', sans-serif; }
-    section[role="index"] > h1 > span:nth-of-type(3) {
-      font-family: 'Oswald', sans-serif; }
-    section[role="index"] > h1 > span:nth-of-type(4) {
-      font-family: 'Gloria Hallelujah', cursive; }
-    section[role="index"] > h1 > span:nth-of-type(5) {
-      font-family: 'Sigmar One', cursive; }
-    section[role="index"] > h1 > span:nth-of-type(6) {
-      font-family: 'Kavoon', cursive; }
-    section[role="index"] > h1 > span:nth-of-type(7) {
-      font-family: 'Alfa Slab One', cursive; }
-    section[role="index"] > h1 > span:nth-of-type(8) {
-      font-family: 'Kavoon', cursive; }
-section[role="index"] > h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 40px;
-  color: white;
-  text-align: center;
-  margin-top: -5%; }
-  @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-    section[role="index"] > h2 {
-      font-size: 50px;
-      margin-top: 5%; } }
-  @media only screen and (max-width: 640px) {
-    section[role="index"] > h2 {
-      font-size: 30px; } }
-  @media only screen and (min-width: 641px) and (max-width: 1024px) {
-    section[role="index"] > h2 {
-      font-size: 30px; } }
-section[role="index"] > p {
-  text-align: center;
-  width: 150px;
-  font-size: 20px;
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  top: 82%;
-  position: absolute;
-  left: 43%; }
-  @media only screen and (max-width: 640px) {
-    section[role="index"] > p {
-      position: relative;
-      top: 40%;
-      left: 35%; } }
-  @media only screen and (min-width: 641px) and (max-width: 1024px) {
-    section[role="index"] > p {
-      top: 50%;
-      left: 41%; } }
-section[role="index"] > a > img {
-  width: 100px;
-  position: absolute;
-  left: 45%;
-  top: 88%;
-  /*-webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: tada;
-  animation-name: tada;*/
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: flash;
-  animation-name: flash; }
-  @media only screen and (max-width: 640px) {
-    section[role="index"] > a > img {
-      position: relative;
-      top: 45%;
-      left: 40%;
-      transform: scale(0.7, 0.7); } }
-  @media only screen and (min-width: 641px) and (max-width: 1024px) {
-    section[role="index"] > a > img {
-      transform: scale(0.7, 0.7);
-      top: 55%; } }
+      section[role="index"] > h2 {
+        font-size: 30px; } }
+  section[role="index"] > p {
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    @media only screen and (max-width: 640px) {
+      section[role="index"] > p {
+        position: relative;
+        top: 40%;
+        left: 35%; } }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      section[role="index"] > p {
+        display: none; } }
+  section[role="index"] > a > img {
+    width: 75px;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: flash;
+    animation-name: flash;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+    @media only screen and (max-width: 640px) {
+      section[role="index"] > a > img {
+        position: relative;
+        top: 45%;
+        left: 40%;
+        transform: scale(0.7, 0.7); } }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      section[role="index"] > a > img {
+        display: none; } }
 
 section[role="quienesSomos"] {
-  margin-top: 38%;
   font-family: 'Montserrat', sans-serif; }
   @media only screen and (min-width: 1025px) and (max-width: 1920px) {
     section[role="quienesSomos"] {
       margin-top: 9em; } }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    section[role="quienesSomos"] {
+      margin-top: 10%; } }
   section[role="quienesSomos"] #principal {
     width: 100%;
     height: 25em;
@@ -444,6 +435,12 @@ section[role="quienesSomos"] {
     @media only screen and (min-width: 1025px) and (max-width: 1920px) {
       section[role="quienesSomos"] .cuadro_texto {
         font-size: 19px; } }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      section[role="quienesSomos"] .cuadro_texto {
+        width: 60%;
+        height: 89%;
+        padding: 1%;
+        font-size: 20px; } }
   section[role="quienesSomos"] #iconos_izquierda {
     margin-top: 1em;
     height: 100%;
@@ -451,18 +448,38 @@ section[role="quienesSomos"] {
     display: inline-block;
     vertical-align: top;
     float: left; }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      section[role="quienesSomos"] #iconos_izquierda {
+        float: none;
+        width: 15%;
+        height: 50%; } }
     section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
       position: relative;
       left: 27%;
       top: 12%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(1) {
+          left: 27%;
+          top: 8%; } }
     section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(2) {
       position: relative;
       left: 57%;
       top: 12%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(2) {
+          left: 27%;
+          top: 14%; } }
     section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(3) {
       position: relative;
       left: 25%;
       top: 52%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_izquierda i:nth-of-type(3) {
+          left: 27%;
+          top: 20%; } }
+    @media only screen and (max-width: 640px) {
+      section[role="quienesSomos"] #iconos_izquierda i {
+        transform: scale(0.5, 0.5); } }
   section[role="quienesSomos"] #iconos_derecha {
     margin-top: 1em;
     height: 100%;
@@ -470,21 +487,47 @@ section[role="quienesSomos"] {
     display: inline-block;
     vertical-align: top;
     float: right; }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      section[role="quienesSomos"] #iconos_derecha {
+        float: none;
+        width: 15%;
+        height: 50%; } }
     section[role="quienesSomos"] #iconos_derecha i:nth-of-type(1) {
       position: relative;
       left: 27%;
       top: 12%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(1) {
+          left: 27%;
+          top: -103%; } }
     section[role="quienesSomos"] #iconos_derecha i:nth-of-type(2) {
       position: relative;
       left: 57%;
       top: 12%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(2) {
+          left: 27%;
+          top: -97%; } }
     section[role="quienesSomos"] #iconos_derecha i:nth-of-type(3) {
       position: relative;
       left: 25%;
       top: 52%; }
+      @media only screen and (max-width: 640px) {
+        section[role="quienesSomos"] #iconos_derecha i:nth-of-type(3) {
+          left: 27%;
+          top: -91%; } }
+    @media only screen and (max-width: 640px) {
+      section[role="quienesSomos"] #iconos_derecha i {
+        transform: scale(0.5, 0.5); } }
   section[role="quienesSomos"] p {
     height: 6em;
     display: block; }
+    @media only screen and (max-width: 640px) {
+      section[role="quienesSomos"] p {
+        font-size: 12px; } }
+  @media only screen and (max-width: 640px) {
+    section[role="quienesSomos"] h3 {
+      font-size: 15px; } }
 
 section[role="equipo"] {
   height: 33em;

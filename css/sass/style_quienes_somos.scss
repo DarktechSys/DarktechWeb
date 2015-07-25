@@ -1,11 +1,14 @@
 
 section[role="quienesSomos"]{
-	margin-top:38%;
 	font-family: 'Montserrat', sans-serif;
 
 
   @include desktop(1025px , 1920px){
     margin-top: 9em;
+  }
+
+  @include tablet(641px, 1024px){
+    margin-top: 10%;
   }
 
   #principal{
@@ -40,6 +43,12 @@ section[role="quienesSomos"]{
             font-size: 19px;
                }
 
+        @include tablet(641px, 1024px){
+          width: 60%;
+          height: 89%;
+          padding: 1%;
+          font-size: 20px;
+        }
 
   }
 
@@ -50,22 +59,55 @@ section[role="quienesSomos"]{
     display: inline-block;
     vertical-align: top;
     float: left;
+    @include tablet(641px, 1024px){
+      float: none;
+      width: 15%;
+      height: 50%;
+    }
     i {
         &:nth-of-type(1){
           position:relative;
           left: 27%;
           top: 12%;
+          @include movil{
+            left: 27%;
+            top: 8%;
+          }
+          @include tablet(641px, 1024px){
+
+          }
         }
         &:nth-of-type(2){
           position:relative;
           left: 57%;
           top: 12%;
+          @include movil{
+            left: 27%;
+            top: 14%;
+          }
+          @include tablet(641px, 1024px){
+
+          }
         }
         &:nth-of-type(3){
           position:relative;
           left: 25%;
           top: 52%;
+          @include movil{
+            left: 27%;
+            top: 20%;
+          }
+          @include tablet(641px, 1024px){
+
+          }
         }
+        @include movil{
+          transform: scale(0.5,0.5);
+        }
+        @include tablet(641px, 1024px){
+
+        }
+
     }
 }
 
@@ -77,6 +119,11 @@ section[role="quienesSomos"]{
     vertical-align: top;
     float: right;
 
+    @include tablet(641px, 1024px){
+      float: none;
+      width: 15%;
+      height: 50%;
+    }
 
 
      i {
@@ -84,21 +131,65 @@ section[role="quienesSomos"]{
           position:relative;
           left: 27%;
           top: 12%;
+          @include movil{
+            left: 27%;
+            top: -103%;
+          }
+          @include tablet(641px, 1024px){
+
+          }
         }
         &:nth-of-type(2){
           position:relative;
           left: 57%;
           top: 12%;
+          @include movil{
+            left: 27%;
+            top: -97%;
+          }
+          @include tablet(641px, 1024px){
+
+          }
         }
         &:nth-of-type(3){
           position:relative;
           left: 25%;
           top: 52%;
+          @include movil{
+            left: 27%;
+            top: -91%;
+          }
+          @include tablet(641px, 1024px){
+
+          }
+        }
+
+        @include movil{
+          transform: scale(0.5,0.5);
+        }
+        @include tablet(641px, 1024px){
+
         }
     }
 }
   p {
     height:6em;
     display:block;
+    @include movil{
+      font-size: 12px;
+    }
+    @include tablet(641px, 1024px){
+
+    }
+  }
+  h3 {
+    @include movil{
+      font-size: 15px;
+
+    }
+    @include tablet(641px, 1024px){
+
+
+    }
   }
 }

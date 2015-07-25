@@ -93,10 +93,10 @@ $("#principal").on("mouseenter mouseleave", function(e){
 
 	}
 	if(e.type === "mouseleave"){
-		clearInterval(anim1);
+		/*clearInterval(anim1);
 		clearInterval(anim3);
 		anim2 = setInterval(animacion2,30);
-		idCarrusel = window.setInterval(ejecutaCarrusel,2000);
+		idCarrusel = window.setInterval(ejecutaCarrusel,2000);*/
 	}
 });
 
