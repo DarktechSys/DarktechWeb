@@ -18,6 +18,7 @@ $min_tv: 1921px;
 		@content;
 	}
 }
+
 @mixin tv{
 	@media only screen and (min-width: #{$min_tv}){
 		@content;
