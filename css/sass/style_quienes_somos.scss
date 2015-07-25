@@ -1,11 +1,14 @@
 
 section[role="quienesSomos"]{
-	margin-top:38%;
 	font-family: 'Montserrat', sans-serif;
 
 
   @include desktop(1025px , 1920px){
     margin-top: 15%;
+  }
+
+  @include tablet(641px, 1024px){
+    margin-top: 10%;
   }
 
   #principal{
@@ -44,6 +47,12 @@ section[role="quienesSomos"]{
           margin-left: 0px;
         }
 
+        @include tablet(641px, 1024px){
+          width: 60%;
+          height: 89%;
+          padding: 1%;
+          font-size: 20px;
+        }
 
   }
 
@@ -53,7 +62,13 @@ section[role="quienesSomos"]{
     width: 33%;
     display: inline-block;
     vertical-align: top;
-    //float: left;
+    float: left;
+    @include tablet(641px, 1024px){
+      float: none;
+      width: 15%;
+      height: 50%;
+    }
+
     i {
         &:nth-of-type(1){
           position:relative;
@@ -98,6 +113,13 @@ section[role="quienesSomos"]{
     display:inline-block;
     vertical-align: top;
     float: right;
+
+    @include tablet(641px, 1024px){
+      float: none;
+      width: 15%;
+      height: 50%;
+    }
+
      i {
         &:nth-of-type(1){
           position:relative;

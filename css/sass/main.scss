@@ -31,14 +31,18 @@ h2{
 .greca{
 	width: 5em;
 	height: 10px;
-  	display: inline-block;
-  	border-top: 4px double;
-  	border-color: #2CA599;
+  display: inline-block;
+  border-top: 4px double;
+  border-color: #2CA599;
 
 
   @include desktop(1025px , 1920px){
     width: 6em;
     }
+
+  @include tablet(641px, 1024px){
+    width: 3em;
+  }
 }
 
   #mensaje{
@@ -54,9 +58,15 @@ h2{
   color: white;
   border: 2px solid white;
   z-index: 2;
+<<<<<<< HEAD
   
   @include movil{
     display:none;
+=======
+
+  @include tablet(641px, 1024px){
+    display: none;
+>>>>>>> 6ea37f11b73c571d0d25db936f6462267d229cb2
   }
 
 
