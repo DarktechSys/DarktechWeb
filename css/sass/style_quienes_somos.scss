@@ -5,7 +5,7 @@ section[role="quienesSomos"]{
 
 
   @include desktop(1025px , 1920px){
-    margin-top: 15%;
+    margin-top: 9em;
   }
 
   #principal{
@@ -76,6 +76,8 @@ section[role="quienesSomos"]{
     display:inline-block;
     vertical-align: top;
     float: right;
+
+
 
      i {
         &:nth-of-type(1){

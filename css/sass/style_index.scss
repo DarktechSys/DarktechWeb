@@ -3,8 +3,8 @@ section[role="index"]{
 	position: absolute;
     	top: 50%;
     	left: 50%;
-    	min-width: 100%;
-    	min-height: 100%;
+    	//min-width: 100%;
+    	//min-height: 100%;
     	width: auto;
     	height: auto;
     	z-index: -100;
@@ -17,9 +17,14 @@ section[role="index"]{
 
 		}
 		@include tablet(641px, 1024px){
-
+		min-width: 100%;
+    		min-height: 100%;
 
 		}
+
+		  @include desktop(1025px , 1920px){
+    		//min-height: 40em;
+  		}
 
 	}
 

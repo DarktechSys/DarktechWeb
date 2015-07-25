@@ -77,6 +77,10 @@ footer{
       text-transform: uppercase;
       background-color: #056868;
 
+      @include desktop(1025px , 1920px){
+      padding: 25px 0px 50px 0px;
+        }
+
 
 
     }
