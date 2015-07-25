@@ -35,6 +35,7 @@ section[role="quienesSomos"]{
       width:38%;
       height: 100%;
       vertical-align: top;
+        
         @include desktop(1025px , 1920px){
             font-size: 19px;
                }
@@ -113,7 +114,7 @@ section[role="quienesSomos"]{
 
     @include tablet(641px, 1024px){
       float: none;
-      width: 15%;
+      width:  15%;
       height: 50%;
     }
 

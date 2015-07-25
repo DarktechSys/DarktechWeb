@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipograf├¡a */
+/* Tipografía */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -8,7 +8,7 @@
 @import "http://fonts.googleapis.com/css?family=Sigmar+One";
 @import "http://fonts.googleapis.com/css?family=Kavoon";
 @import "http://fonts.googleapis.com/css?family=Alfa+Slab+One";
-/* Adaptativas p├ígina */
+/* Adaptativas página */
 /* Default */
 html {
   overflow-x: hidden; }
@@ -295,7 +295,7 @@ footer {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* P├íginas */
+/* Páginas */
 section[role="index"] {
   background: url("../img/fondo.jpg");
   background-size: cover; }
@@ -364,7 +364,8 @@ section[role="index"] {
         margin-top: 5%; } }
     @media only screen and (max-width: 640px) {
       section[role="index"] > h2 {
-        font-size: 30px; } }
+        font-size: 30px;
+        padding-bottom: 10%; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="index"] > h2 {
         font-size: 30px;
@@ -522,6 +523,11 @@ section[role="quienesSomos"] {
 section[role="equipo"] {
   height: 33em;
   padding-bottom: 2%; }
+  @media only screen and (max-width: 640px) {
+    section[role="equipo"] {
+      width: 100%;
+      height: auto;
+      display: block; } }
   @media only screen and (min-width: 641px) and (max-width: 1024px) {
     section[role="equipo"] {
       width: 100%;
@@ -536,6 +542,13 @@ section[role="equipo"] {
     padding: 0px;
     margin: 1px;
     transition: all 0.5s ease; }
+    @media only screen and (max-width: 640px) {
+      section[role="equipo"] > div {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        display: block; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="equipo"] > div {
         width: 80%;
@@ -651,6 +664,9 @@ section[role="servicios"] {
       background: #056868;
       margin: 1px;
       cursor: pointer; }
+      @media only screen and (max-width: 640px) {
+        section[role="servicios"] > ul > li {
+          width: calc(50% - 32px); } }
       @media only screen and (min-width: 641px) and (max-width: 1024px) {
         section[role="servicios"] > ul > li {
           width: calc(50% - 32px);
@@ -699,6 +715,11 @@ section[role="precios"] {
     width: calc((100% / 3) - 22px);
     background-color: #2CA599;
     margin-left: 17px; }
+    @media only screen and (max-width: 640px) {
+      section[role="precios"] .tabla {
+        display: block;
+        width: 50%;
+        margin: 1% auto 1% auto; } }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       section[role="precios"] .tabla {
         display: block;

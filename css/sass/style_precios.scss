@@ -34,7 +34,12 @@ h5{
 	width: calc((100% / 3) - 22px);
 	background-color: #2CA599;
            margin-left: 17px;
-
+	
+	@include movil{
+		display: block;
+		width:50%;
+		margin: 1% auto 1% auto;
+	}
 	@include tablet(641px, 1024px){
 		display: block;
 		width: 65%;

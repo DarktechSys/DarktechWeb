@@ -51,7 +51,10 @@ section[role="servicios"]{
 			background: #056868;
 			margin: 1px;
 			cursor: pointer;
-
+			
+			@include movil {
+				width: calc(50% - 32px);
+			}
 			@include tablet(641px, 1024px){
 				width: calc(50% - 32px);
 				height: 20em;
