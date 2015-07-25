@@ -813,12 +813,11 @@ section[role="contacto"] {
     border-radius: 0;
     background: transparent;
     text-align: center;
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
     text-align: center;
-    margin-right: 10%;
     outline: 0px; }
     @media only screen and (min-width: 481px) and (max-width: 767px) {
       section[role="contacto"] #telefono {
@@ -836,7 +835,7 @@ section[role="contacto"] {
     border-radius: 0;
     background: transparent;
     text-align: center;
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
