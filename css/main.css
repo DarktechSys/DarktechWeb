@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipografía */
+/* Tipograf├¡a */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -8,7 +8,7 @@
 @import "http://fonts.googleapis.com/css?family=Sigmar+One";
 @import "http://fonts.googleapis.com/css?family=Kavoon";
 @import "http://fonts.googleapis.com/css?family=Alfa+Slab+One";
-/* Adaptativas página */
+/* Adaptativas p├ígina */
 /* Default */
 html {
   overflow-x: hidden; }
@@ -289,7 +289,7 @@ footer {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* Páginas */
+/* P├íginas */
 section[role="index"] {
   background: url("../img/fondo.jpg");
   background-size: cover; }
@@ -529,6 +529,11 @@ section[role="quienesSomos"] {
 section[role="equipo"] {
   height: 33em;
   padding-bottom: 2%; }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    section[role="equipo"] {
+      width: 100%;
+      height: auto;
+      display: block; } }
   section[role="equipo"] > div {
     color: white;
     display: inline-block;
@@ -537,50 +542,32 @@ section[role="equipo"] {
     height: 25em;
     padding: 0px;
     margin: 1px;
-    transition: all 0.5s ease;
-    		/*
-    		@include responsive(481px, 767px){
-    	  		width: 100%;
-    			height:auto;
-    	  		display: block;
-    	  		padding: 0px;
-    	  		margin-top: -44px;
-    	  		transition: all 0s ease;
-    
-    	  		padding-top: 50px !important;
-      			padding-bottom: 0px !important;
-    			img{
-    				&.foto{
-    					width: 100% !important;
-    				}
-    
-    				&.bubble{
-    					display: none !important;
-    				}
-    			}
-    
-    			.datos{
-    				display: none !important;
-    
-    
-    			}
-    
-    			p{
-    				font-size: 40px;
-    				>a{
-    				font-size: 10px;
-    				text-decoration: none !important;
-      				text-align: center !important;
-      				color: white !important;
-      				margin-top: 20px !important;
-      				display: inline-block!important;
-      			}
-    			}
-    
-    
-    		}
-    
-    		*/ }
+    transition: all 0.5s ease; }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      section[role="equipo"] > div {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 0px;
+        margin-top: -44px;
+        transition: all 0s ease;
+        padding-top: 50px !important;
+        padding-bottom: 0px !important; }
+        section[role="equipo"] > div img.foto {
+          width: 100% !important; }
+        section[role="equipo"] > div img.bubble {
+          display: none !important; }
+        section[role="equipo"] > div .datos {
+          display: none !important; }
+        section[role="equipo"] > div p {
+          font-size: 40px; }
+          section[role="equipo"] > div p > a {
+            font-size: 20px !important;
+            text-decoration: none !important;
+            text-align: center !important;
+            color: white !important;
+            margin-top: 20px !important;
+            display: inline-block !important; } }
     section[role="equipo"] > div:hover {
       padding-top: 50px;
       padding-bottom: 0px; }
@@ -609,12 +596,10 @@ section[role="equipo"] {
       background: #2CA599;
       display: inline-block;
       vertical-align: top;
-      transition: all 0.5s ease;
-      /*
-      @include responsive(768px, 979px){
-      	display: none;
-      }
-      */ }
+      transition: all 0.5s ease; }
+      @media only screen and (min-width: 768px) and (max-width: 979px) {
+        section[role="equipo"] > div .datos {
+          display: none; } }
       section[role="equipo"] > div .datos > a {
         text-decoration: none;
         display: block;
@@ -629,25 +614,9 @@ section[role="equipo"] {
       width: 90%;
       margin: 0px;
       padding: 5%;
-      margin-top: 15px;
-      			/*
-        			@include responsive(768px, 979px){
-        				padding: 3% 5%;
-      				font-size: 40px;
-      				margin-top: 0px;
-      				text-align: right;
-        			}*/ }
+      margin-top: 15px; }
       section[role="equipo"] > div > p > a {
-        display: none;
-        				/*
-        				@include responsive(768px, 979px){
-        					display: inline-block;
-        					text-decoration: none;
-        					color: white;
-        					>i{
-          						font-size: 1em !important;
-          					}
-        				}*/ }
+        display: none; }
 
 section[role="servicios"] {
   font-family: 'Montserrat', sans-serif;
