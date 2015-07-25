@@ -4,7 +4,7 @@ section[role="quienesSomos"]{
 
 
   @include desktop(1025px , 1920px){
-    margin-top: 9em;
+    margin-top: -10px;
   }
 
   #principal{
@@ -55,6 +55,9 @@ section[role="quienesSomos"]{
     display: inline-block;
     vertical-align: top;
     float: left;
+    @include desktop(1025px , 1920px){
+     width: 28%;
+  }
     @include tablet(641px, 1024px){
       display: none;
     }
@@ -112,7 +115,9 @@ section[role="quienesSomos"]{
     display:inline-block;
     vertical-align: top;
     float: right;
-
+     @include desktop(1025px , 1920px){
+     width: 28%;
+  }
     @include tablet(641px, 1024px){
       float: none;
       width: 15%;
