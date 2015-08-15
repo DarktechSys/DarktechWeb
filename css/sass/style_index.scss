@@ -3,6 +3,13 @@ section[role="index"]{
 	background: url('../img/fondo.jpg');
 	background-size:cover;
 
+	>img{
+		width: 90%;
+    	margin: auto;
+    	display: block;
+    	padding-top: 5%;
+	}
+
 	>h1{
 		width: 1280px;
   		margin-left: auto;
@@ -115,6 +122,8 @@ section[role="index"]{
     display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
    	@include movil{
    		display:none;
 		}
