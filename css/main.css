@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipografía */
+/* Tipograf├¡a */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -8,7 +8,7 @@
 @import "http://fonts.googleapis.com/css?family=Sigmar+One";
 @import "http://fonts.googleapis.com/css?family=Kavoon";
 @import "http://fonts.googleapis.com/css?family=Alfa+Slab+One";
-/* Adaptativas página */
+/* Adaptativas p├ígina */
 /* Default */
 html {
   overflow-x: hidden; }
@@ -295,10 +295,15 @@ footer {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* Páginas */
+/* P├íginas */
 section[role="index"] {
   background: url("../img/fondo.jpg");
   background-size: cover; }
+  section[role="index"] > img {
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding-top: 5%; }
   section[role="index"] > h1 {
     width: 1280px;
     margin-left: auto;
@@ -378,7 +383,9 @@ section[role="index"] {
     color: white;
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px; }
     @media only screen and (max-width: 640px) {
       section[role="index"] > p {
         display: none; } }
