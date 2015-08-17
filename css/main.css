@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Tipograf├¡a */
+/* Tipografía */
 @import "http://fonts.googleapis.com/css?family=Montserrat";
 @import "http://fonts.googleapis.com/css?family=Lobster";
 @import "http://fonts.googleapis.com/css?family=Orbitron";
@@ -8,7 +8,7 @@
 @import "http://fonts.googleapis.com/css?family=Sigmar+One";
 @import "http://fonts.googleapis.com/css?family=Kavoon";
 @import "http://fonts.googleapis.com/css?family=Alfa+Slab+One";
-/* Adaptativas p├ígina */
+/* Adaptativas página */
 /* Default */
 html {
   overflow-x: hidden; }
@@ -295,7 +295,7 @@ footer {
     -webkit-transform: none;
     transform: none;
     opacity: 1; } }
-/* P├íginas */
+/* Páginas */
 section[role="index"] {
   background: url("../img/fondo.jpg");
   background-size: cover; }
@@ -817,7 +817,7 @@ section[role="contacto"] {
     height: 40px;
     font-size: 15px;
     border-radius: 0;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     padding-left: 20px;
     padding-top: 40px;
     background: transparent;
@@ -836,7 +836,7 @@ section[role="contacto"] {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     text-align: center;
     outline: 0px; }
   section[role="contacto"] #correo {
@@ -849,7 +849,7 @@ section[role="contacto"] {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     text-align: center;
     margin-left: 10%;
     outline: 0px; }
@@ -857,7 +857,7 @@ section[role="contacto"] {
     height: 100px;
     width: 80%;
     margin-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     border-bottom: 1px solid #333;
     resize: none;
     background: transparent;
@@ -866,6 +866,8 @@ section[role="contacto"] {
   section[role="contacto"] .form-control {
     border: none;
     border-bottom: 1px solid #333; }
+  section[role="contacto"] button p {
+    margin: 0; }
   section[role="contacto"] button {
     display: block;
     margin-left: auto;
@@ -931,5 +933,33 @@ section[role="sociales"] > a {
     width: 65px;
     display: block;
     color: white; }
+
+.error_formulario {
+  display: block;
+  color: red;
+  opacity: 0; }
+
+#error_nombre {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%; }
+
+#error_correo {
+  display: inline-block;
+  margin-left: 5%;
+  margin-bottom: 0%;
+  width: 45%; }
+
+#error_telefono {
+  display: inline-block;
+  margin-right: auto;
+  margin-bottom: 0%;
+  width: 45%; }
+
+#error_mensaje {
+  width: 80%;
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%; }
 
 /*# sourceMappingURL=main.css.map */

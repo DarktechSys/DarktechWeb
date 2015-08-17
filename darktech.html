@@ -287,17 +287,23 @@
 
                     			<div>
                     				<input name="nombre" type="text" id="nombre" class="form-control" placeholder="Nombre Completo">
-
-
-                    				<input name="correo" type="email" id="correo"  class="form-control" value="" placeholder="Correo electronico"><!--
+									<p id="error_nombre"></p>
+                    				<input name="correo" type="email" id="correo"  class="form-control" value="" placeholder="Correo electronico">
+                    				<!--
 
                     				--><input name="telefono" type="tel" id="telefono"  class="form-control" value="" placeholder="Teléfono">
-
+                    				<div>
+                    				<p id="error_correo"></p>
+                    				<p id="error_telefono"></p>
+									</div>
 
                     				<textarea name="mensaje" cols="40" rows="5"  class="form-control" id = "comentario" placeholder="Dudas, comentarios o servicios de Interés"></textarea>
 
+									<p id="error_mensaje"></p>
+                      				<button id="boton_form"  onclick="valida_datos();">
 
-                      				<button  onclick="valida_datos()">ENVIAR</button>
+                      					<p>Enviar</p>
+                      				</button>
 				</div>
 
 
