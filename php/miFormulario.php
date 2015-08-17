@@ -1,9 +1,5 @@
 <?php
 
-
-
-
-
 $para      = 'darktech.systems@gmail.com';
 $titulo    = '[Mensaje de pagina web]';
 $mensaje   = $_POST['mensaje'];
